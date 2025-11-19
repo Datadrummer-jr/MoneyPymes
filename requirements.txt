@@ -10,4 +10,5 @@ xlrd==1.2.0
 folium
 scikit-learn
 numpy
-
+pypdf2
+python_docx

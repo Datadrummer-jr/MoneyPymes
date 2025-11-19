@@ -2,6 +2,7 @@ from typing import List, Tuple
 import numpy as np
 import plotly.graph_objects as go
 import json
+from json import JSONDecodeError
 from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import datetime, timedelta
@@ -114,9 +115,13 @@ def save_json(datos,file: str) -> None:
     json.dump(datos, sj, indent=4, ensure_ascii=False)
 
 def read_json(file: str):
-  with open(file) as rj:
-    datos = json.load(rj)
-  return datos
+  try:
+    with open(file) as rj:
+      datos = json.load(rj)
+    return datos
+  except JSONDecodeError as e:
+    return f'Hubi un error de decodificación dej json: {e}'
+
 
 def coeficiente(ind: List[List[int]], dep: List[int], grade : int=1) -> float:
   model = LinearRegression()
@@ -136,7 +141,6 @@ def intervalo_fechas(fecha_inicio: str, fecha_fin: str, url: bool = True, time: 
      date_to = datetime.strptime(f"{fecha_fin} 23:59:01", "%Y-%m-%d %H:%M:%S")
     else:
      date_to = datetime.strptime(fecha_fin, "%Y-%m-%d")    
-
 
     resultado = []
     current = date_from.date()

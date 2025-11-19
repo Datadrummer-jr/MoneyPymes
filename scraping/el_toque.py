@@ -19,21 +19,26 @@ def toque(inicio: str,fin: str):
     fechas = mf.intervalo_fechas(inicio, fin, False, False)
     urls = mf.intervalo_fechas(inicio, fin)
     with Client() as client:
-        for i in range(len(fechas)-1) :
+        while len(fechas) > 0 and len(urls) > 0:
           try:
-            url = f'https://tasas.eltoque.com/v1/trmi?{urls[i]}'
+            url = f'https://tasas.eltoque.com/v1/trmi?{urls[0]}'
             response = client.get(url=url, headers=header)
             response.raise_for_status()
             tasas = response.json()
-            tasas_actuales = mf.read_json("el_toque.json")
-            tasas_actuales[fechas[i]["date_from"]] = tasas["tasas"]
-            mf.save_json( tasas_actuales,"el_toque.json")
-            sleep(2)
+            tasas_actuales = mf.read_json("../data/el_toque.json")
+            tasas_actuales[fechas[0]["date_from"]] = tasas["tasas"]
+            mf.save_json( tasas_actuales,"../data/el_toque.json")
+            print(f'Se guardó el {fechas[0]["date_from"]}')
+            fechas.pop(0)
+            urls.pop(0)
+            sleep(10)
           except HTTPError:
-             return 'durmiendo por: ', fechas[i]["date_from"]
+             print('durmiendo por: ', fechas[0]["date_from"])
+             sleep(60)
+          
     return urls
 
 if __name__ == "__main__":
-    fecha_inicio = "2025-11-09"
-    fecha_fin = "2025-11-11"
+    fecha_inicio = "2025-03-01"
+    fecha_fin = "2025-03-31"
     toque(fecha_inicio, fecha_fin)
