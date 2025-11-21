@@ -213,8 +213,8 @@ __marimo__/
 setup.py
 
 # Ignorar el archivo backend específico
-backend.py
-backend.pyx
+main.py
+main_cython.pyx
 
 # Permitir binarios compilados
 !*.pyd

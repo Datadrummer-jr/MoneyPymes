@@ -1,3 +1,5 @@
-from backend import hello_world
+from main_cython import app
+import uvicorn
 
-print(hello_world())
+if __name__ == "__main__":
+    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
