@@ -1,0 +1,51 @@
+{
+    "1": {
+        "name": "Osymandias",
+        "sales_category": "minorista",
+        "horary":{
+        "days": ["lunes", "domingo"],
+        "hour" : "9:00 - 20.00"
+    },
+     "coordinates": [],
+    "products": {
+        "yogurt": {
+            "3_lt": 3200,
+            "pomo": {
+                "350_ml" : 400
+            },
+            "vaso":{
+                "180_ml": 230
+            }
+        },
+        "cerveza":{
+            "cristal": 350,
+            "unlaguer": 230,
+            "presidente": 230,
+            "coprove": 230
+        },
+        "jugo":{
+            "cajita": {
+                "pequeña": 170,
+                "grande": 650
+            }
+        },
+        "refresco":{
+            "pomo":{
+                "1500_ml":650
+            },
+            "polvo": 50
+        },
+        "galletas":
+       {
+        "pequeño": 260,
+        "pequeña_2": 200
+       },
+       "caramelo": 20,
+       "bombón": 50,
+       "chupa_chupa": 60,
+       "papitas": 300,
+       "aceite": 990,
+       "sasón" :750
+    }
+}
+}

@@ -32,6 +32,8 @@ def toque(inicio: str,fin: str):
             print(f'Se guardó el {fechas[0]["date_from"]}')
             fechas.pop(0)
             urls.pop(0)
+            if len(fechas) == 0:
+               break
             sleep(10)
           except HTTPError:
              print('durmiendo por: ', fechas[0]["date_from"])
@@ -40,6 +42,6 @@ def toque(inicio: str,fin: str):
     return urls
 
 if __name__ == "__main__":
-    fecha_inicio = "2025-03-01"
-    fecha_fin = "2025-03-31"
+    fecha_inicio = "2025-04-01"
+    fecha_fin = "2025-04-15"
     toque(fecha_inicio, fecha_fin)
