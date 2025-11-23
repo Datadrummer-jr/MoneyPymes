@@ -214,7 +214,7 @@ setup.py
 
 # Ignorar el archivo backend específico
 main.py
-main_cython.pyx
+*.pyx
 
 # Permitir binarios compilados
 !*.pyd

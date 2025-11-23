@@ -1,4 +1,5 @@
-from main_cython import app
+
+from datapyme import app
 import uvicorn
 
 if __name__ == "__main__":

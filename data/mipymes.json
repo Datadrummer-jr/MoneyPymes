@@ -1,11 +1,13 @@
 {
-    "1": {
+    "0": {
         "name": "Osymandias",
         "sales_category": "minorista",
         "horary":{
         "days": ["lunes", "domingo"],
         "hour" : "9:00 - 20.00"
     },
+    "municipality":"DO",
+    "city": "Habana",
      "coordinates": [],
     "products": {
         "yogurt": {
@@ -45,7 +47,61 @@
        "chupa_chupa": 60,
        "papitas": 300,
        "aceite": 990,
-       "sasón" :750
+       "sazón" :750,
+       "sardina" : {
+        "pequeño":400,
+        "grande": 800
+    },
+       "mostaza": 850,
+       "leche_condesada": 500,
+       "pasta_de_tomate": 850,
+       "atún": 450,
+       "aceitunas": 900,
+       "hamburguesas":{
+        "prodal": 620
+       },
+       "jamón":{
+        "mini_vicky": 700,
+        "vicky": 1400,
+        "lasqueado":850,
+        "ahumado": 1600 
+       },
+       "mortadella": 570,
+       "chorizo":{
+        "vela": 1750,
+        "criollo": 1100
+       },
+       "recortería": {
+        "mixta": 700
+       },
+       "lomo_de_cerdo": {
+        "ahumado": 1150,
+        "crudo": 1100
+       },
+       "pollo":{
+        "pechuga": 1400,
+        "higado": 800,
+        "molleja": 1000,
+        "picadillo":320
+       },
+       "res":{
+        "picadillo":1300
+       },
+       "albondigas":620
+    }
+},
+    "1":{
+        "name": null,
+        "sales_category": "minorista",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality":"DO",
+    "city": "Habana",
+     "coordinates": [],
+    "products": {
+
     }
 }
 }

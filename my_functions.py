@@ -7,6 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.preprocessing import PolynomialFeatures
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
+import subprocess
 
 def you_type(cadena):
   if type(cadena) == int:
@@ -120,8 +121,7 @@ def read_json(file: str):
       datos = json.load(rj)
     return datos
   except JSONDecodeError as e:
-    return f'Hubi un error de decodificación dej json: {e}'
-
+    return f'Hubo un error de decodificación del json: {e}'
 
 def coeficiente(ind: List[List[int]], dep: List[int], grade : int=1) -> float:
   model = LinearRegression()
@@ -171,4 +171,14 @@ def intervalo_fechas(fecha_inicio: str, fecha_fin: str, url: bool = True, time: 
         })
         current += timedelta(days=1)
     return resultado
+
+def write_file(origen: str, destino: str):
+  with open(origen, "r") as file:
+    text = file.read()
+  with open(destino, "w") as wr:
+    wr.write(text)
+  return subprocess.run(['python', 'setup.py', 'build_ext', '--inplace'],  capture_output=True, text=True).stdout
+
+
+  
 

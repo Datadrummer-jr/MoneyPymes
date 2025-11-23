@@ -20,7 +20,7 @@ def toque(inicio: str,fin: str):
     fechas = mf.intervalo_fechas(inicio, fin, False, False)
     urls = mf.intervalo_fechas(inicio, fin)
     with Client() as client:
-        while len(fechas) > 0 and len(urls) > 0:
+        while fechas:
           try:
             url = f'https://tasas.eltoque.com/v1/trmi?{urls[0]}'
             response = client.get(url=url, headers=header)
@@ -32,7 +32,7 @@ def toque(inicio: str,fin: str):
             print(f'Se guardó el {fechas[0]["date_from"]}')
             fechas.pop(0)
             urls.pop(0)
-            if len(fechas) == 0:
+            if not fechas:
                break
             sleep(10)
           except HTTPError:
@@ -42,6 +42,6 @@ def toque(inicio: str,fin: str):
     return urls
 
 if __name__ == "__main__":
-    fecha_inicio = "2025-04-01"
-    fecha_fin = "2025-04-15"
+    fecha_inicio = "2025-10-01"
+    fecha_fin = "2025-10-31"
     toque(fecha_inicio, fecha_fin)
