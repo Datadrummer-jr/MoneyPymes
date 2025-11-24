@@ -15,7 +15,6 @@ def formate_pyme(lista:list) ->bool:
 mipymes = []
 with pdfplumber.open('../sources/Listado de Nuevos Actores Económicos aprobados hasta 09.05.24 .pdf') as pdf:
   count_page = len(pdf.pages)
-  # mipymes = actores.pages[0].extract_text().strip().split('\n')
   mipymes = pdf.pages[8].extract_table()
   mipymes = [ mf.del_salto(i) for i in mipymes if formate_pyme(i)]
 
@@ -40,4 +39,5 @@ def save_pyme(index: int):
     mf.save_json(mipymes_actuales,'../data/count_pymes.json')
     
 if __name__ == '__main__':
-  save_pyme(0)
+  # save_pyme(0)
+  pass
