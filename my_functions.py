@@ -172,11 +172,11 @@ def intervalo_fechas(fecha_inicio: str, fecha_fin: str, url: bool = True, time: 
         current += timedelta(days=1)
     return resultado
 
-def write_file(origen: str, destino: str):
+def write_file(origen: str, destino: str,replace_of: str="" ,replace_for: str="" ):
   with open(origen, "r") as file:
     text = file.read()
   with open(destino, "w") as wr:
-    wr.write(text)
+    wr.write(text.replace(replace_of,replace_for))
   return subprocess.run(['python', 'setup.py', 'build_ext', '--inplace'],  capture_output=True, text=True).stdout
 
 def del_value(lista: list , value = '') -> List:
