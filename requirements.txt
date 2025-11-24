@@ -12,6 +12,7 @@ folium
 scikit-learn
 numpy
 pypdf2
+pdfplumber
 python_docx   # Todavía no se ha usado y no se ha definido en que usarse
 fastapi[all] 
 pydantic

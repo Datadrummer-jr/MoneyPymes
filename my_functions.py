@@ -117,7 +117,7 @@ def save_json(datos,file: str) -> None:
 
 def read_json(file: str):
   try:
-    with open(file) as rj:
+    with open(file,encoding="utf-8") as rj:
       datos = json.load(rj)
     return datos
   except JSONDecodeError as e:
@@ -179,6 +179,19 @@ def write_file(origen: str, destino: str):
     wr.write(text)
   return subprocess.run(['python', 'setup.py', 'build_ext', '--inplace'],  capture_output=True, text=True).stdout
 
-
+def del_value(lista: list , value = '') -> List:
+  return [ i for i in lista if i != value  ]
   
+def del_space(lista: list) -> list:
+  return [i.strip() for i in lista]
+
+def del_salto(lista: list) -> list:
+  return [i.replace('\n', ' ') for i in lista]
+
+def pto_final(lista: list) -> list:
+  return [i[:-1] for i in lista if i[-1] == '.']
+
+    
+  
+
 
