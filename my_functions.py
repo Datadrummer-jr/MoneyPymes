@@ -186,7 +186,7 @@ def del_space(lista: list) -> list:
   return [i.strip() for i in lista]
 
 def del_salto(lista: list) -> list:
-  return [i.replace('\n', ' ') for i in lista]
+  return [i.replace('\n', ' ') for i in lista  if i is not None]
 
 def pto_final(lista: list) -> list:
   return [i[:-1] for i in lista if i[-1] == '.']
