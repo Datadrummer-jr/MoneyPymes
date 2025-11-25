@@ -6,12 +6,11 @@ matplotlib
 plotly
 bokeh
 cython
-setuptools
+setuptool
 xlrd==1.2.0
 folium
 scikit-learn
 numpy
-pypdf2
 pdfplumber
 python_docx   # Todavía no se ha usado y no se ha definido en que usarse
 fastapi[all] 

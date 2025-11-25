@@ -8,6 +8,7 @@ from sklearn.preprocessing import PolynomialFeatures
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
 import subprocess
+import re
 
 def you_type(cadena):
   if type(cadena) == int:
@@ -172,7 +173,16 @@ def intervalo_fechas(fecha_inicio: str, fecha_fin: str, url: bool = True, time: 
         current += timedelta(days=1)
     return resultado
 
-def write_file(origen: str, destino: str,replace_of: str="" ,replace_for: str="" ):
+
+def one_spce(t:str,f: str,s: str) -> False:
+  lista = t.split()
+  lista = del_value(lista)
+  for i in range(0, len(lista)-1):
+    if lista[i] == f and lista[i+1] == s:
+      return True
+  return False
+
+def write_file(origen: str, destino: str,replace_of: str="" ,replace_for: str=""):
   with open(origen, "r") as file:
     text = file.read()
   with open(destino, "w") as wr:
@@ -180,7 +190,7 @@ def write_file(origen: str, destino: str,replace_of: str="" ,replace_for: str=""
   return subprocess.run(['python', 'setup.py', 'build_ext', '--inplace'],  capture_output=True, text=True).stdout
 
 def del_value(lista: list , value = '') -> List:
-  return [ i for i in lista if i != value  ]
+  return [ i for i in lista if i != value ]
   
 def del_space(lista: list) -> list:
   return [i.strip() for i in lista]
@@ -192,6 +202,59 @@ def pto_final(lista: list) -> list:
   return [i[:-1] for i in lista if i[-1] == '.']
 
     
-  
+def pymes_parser(texto: str, municipios_por_provincia: dict[list[str]]):
+    texto = texto.upper()
+    id_match = re.search(r"\d+", texto)
+    id = id_match.group() if id_match else None
+
+    tipos_clave = {
+        "MIPYME PRIVADA": "MIPYME PRIVADA",
+        "MIPYME ESTATAL": "MIPYME ESTATAL",
+        "CNA": "CNA",
+        "COOPERATIVA NO AGROPECUARIA": "COOPERATIVA NO AGROPECUARIA"
+    }
+
+    tipo_detectado = None
+    clave_tipo = None
+    for clave in tipos_clave.keys():
+        if clave in texto:
+            tipo_detectado = tipos_clave[clave]
+            clave_tipo = clave
+            break
+
+    provincia = None
+    municipio = None
+    empresa = None
+    actividad = None
+
+    if tipo_detectado:
+        partes = texto.split(clave_tipo, 1)
+        actividad = partes[1].strip() if len(partes) > 1 else None
+        bloque_empresa = partes[0].replace(id, "").strip()
+
+        # Detectar provincia y municipio
+        for prov in municipios_por_provincia.keys():
+            if prov in bloque_empresa:
+                provincia = prov
+                resto = bloque_empresa.replace(prov, "").strip()
+                for muni in municipios_por_provincia[prov]:
+                    if muni in resto:
+                        municipio = muni
+                        empresa = resto.replace(muni, "").strip()
+                        break
+                if not municipio:
+                    empresa = resto
+                break
+        if not provincia:
+            empresa = bloque_empresa
+
+    return id, {
+      "name": empresa,
+        "city": provincia,
+        "subject": tipo_detectado,
+        "activity": actividad
+    }
+
+
 
 

@@ -3,16 +3,18 @@
   "ART": "Artemisa",
   "MAY": "Mayabeque",
   "HAB": "La Habana",
-  "MAT": "Matanzas",
+  "MTZ": "Matanzas",
   "VCL": "Villa Clara",
   "SSP": "Sancti Spíritus",
   "CFG": "Cienfuegos",
   "CAV": "Ciego de Ávila",
-  "CMG": "Camagüey",
+  "CAM": "Camagüey",
   "LTU": "Las Tunas",
   "HOL": "Holguín",
-  "GRA": "Granma",
+  "GRM": "Granma",
   "SCU": "Santiago de Cuba",
   "GTM": "Guantánamo",
-  "IJV": "Isla de la Juventud"
+  "IJV": "Isla de la Juventud",
+  "-":  "Isla de la Juventud",
+   "":  "Isla de la Juventud"
 }

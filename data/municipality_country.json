@@ -1,74 +1,74 @@
-{
-  "Pinar del Río": [
-    "Consolación del Sur", "Guane", "La Palma", "Los Palacios", "Mantua",
-    "Minas de Matahambre", "Pinar del Río", "San Juan y Martínez",
-    "San Luis", "Sandino", "Viñales"
+ {
+  "PINAR DEL RIO": [
+    "CONSOLACION DEL SUR", "GUANE", "LA PALMA", "LOS PALACIOS", "MANTUA",
+    "MINAS DE MATAHAMBRE", "PINAR DEL RIO", "SAN JUAN Y MARTINEZ",
+    "SAN LUIS", "SANDINO", "VINALES"
   ],
-  "Artemisa": [
-    "Alquízar", "Artemisa", "Bahía Honda", "Bauta", "Caimito", "Guanajay",
-    "Güira de Melena", "Mariel", "San Antonio de los Baños"
+  "ARTEMISA": [
+    "ALQUIZAR", "ARTEMISA", "BAHIA HONDA", "BAUTA", "CAIMITO", "GUANAJAY",
+    "GUIRA DE MELENA", "MARIEL", "SAN ANTONIO DE LOS BANOS"
   ],
-  "Mayabeque": [
-    "Batabanó", "Bejucal", "Güines", "Jaruco", "Madruga", "Melena del Sur",
-    "Nueva Paz", "Quivicán", "San José de las Lajas", "Santa Cruz del Norte"
+  "MAYABEQUE": [
+    "BATABANO", "BEJUCAL", "GUINES", "JARUCO", "MADRUGA", "MELENA DEL SUR",
+    "NUEVA PAZ", "QUIVICAN", "SAN JOSE DE LAS LAJAS", "SANTA CRUZ DEL NORTE"
   ],
-  "La Habana": [
-    "Arroyo Naranjo", "Boyeros", "Centro Habana", "Cerro", "Cotorro",
-    "Diez de Octubre", "Guanabacoa", "Habana del Este", "Habana Vieja",
-    "La Lisa", "Marianao", "Playa", "Plaza de la Revolución", "Regla",
-    "San Miguel del Padrón"
+  "LA HABANA": [
+    "ARROYO NARANJO", "BOYEROS", "CENTRO HABANA", "CERRO", "COTORRO",
+    "DIEZ DE OCTUBRE", "GUANABACOA", "HABANA DEL ESTE", "HABANA VIEJA",
+    "LA LISA", "MARIANAO", "PLAYA", "PLAZA DE LA REVOLUCION", "REGLA",
+    "SAN MIGUEL DEL PADRON"
   ],
-  "Matanzas": [
-    "Calimete", "Cárdenas", "Ciénaga de Zapata", "Colón", "Jagüey Grande",
-    "Jovellanos", "Limonar", "Los Arabos", "Martí", "Matanzas",
-    "Pedro Betancourt", "Perico", "Unión de Reyes"
+  "MATANZAS": [
+    "CALIMETE", "CARDENAS", "CIENAGA DE ZAPATA", "COLON", "JAGUEY GRANDE",
+    "JOVELLANOS", "LIMONAR", "LOS ARABOS", "MARTI", "MATANZAS",
+    "PEDRO BETANCOURT", "PERICO", "UNION DE REYES"
   ],
-  "Villa Clara": [
-    "Caibarién", "Camajuaní", "Cifuentes", "Corralillo", "Encrucijada",
-    "Manicaragua", "Placetas", "Quemado de Güines", "Ranchuelo",
-    "Santa Clara", "Sagua la Grande", "Santo Domingo"
+  "VILLA CLARA": [
+    "CAIBARIEN", "CAMAJUANI", "CIFUENTES", "CORRALILLO", "ENCRUCIJADA",
+    "MANICARAGUA", "PLACETAS", "QUEMADO DE GUINES", "RANCHUELO",
+    "SANTA CLARA", "SAGUA LA GRANDE", "SANTO DOMINGO"
   ],
-  "Sancti Spíritus": [
-    "Cabaiguán", "Fomento", "Jatibonico", "La Sierpe", "Sancti Spíritus",
-    "Taguasco", "Trinidad", "Yaguajay"
+  "SANCTI SPIRITUS": [
+    "CABAIGUAN", "FOMENTO", "JATIBONICO", "LA SIERPE", "SANCTI SPIRITUS",
+    "TAGUASCO", "TRINIDAD", "YAGUAJAY"
   ],
-  "Cienfuegos": [
-    "Aguada de Pasajeros", "Cienfuegos", "Cruces", "Cumanayagua",
-    "Lajas", "Palmira", "Rodas"
+  "CIENFUEGOS": [
+    "AGUADA DE PASAJEROS", "CIENFUEGOS", "CRUCES", "CUMANAYAGUA",
+    "LAJAS", "PALMIRA", "RODAS"
   ],
-  "Ciego de Ávila": [
-    "Baraguá", "Bolivia", "Chambas", "Ciego de Ávila", "Florencia",
-    "Majagua", "Morón", "Primero de Enero", "Venezuela"
+  "CIEGO DE AVILA": [
+    "BARAGUA", "BOLIVIA", "CHAMBAS", "CIEGO DE AVILA", "FLORENCIA",
+    "MAJAGUA", "MORON", "PRIMERO DE ENERO", "VENEZUELA"
   ],
-  "Camagüey": [
-    "Camagüey", "Carlos Manuel de Céspedes", "Esmeralda", "Florida",
-    "Guáimaro", "Jimaguayú", "Minas", "Najasa", "Nuevitas", "Santa Cruz del Sur",
-    "Sibanicú", "Sierra de Cubitas", "Vertientes"
+  "CAMAGUEY": [
+    "CAMAGUEY", "CARLOS MANUEL DE CESPEDES", "ESMERALDA", "FLORIDA",
+    "GUAIMARO", "JIMAGUAYU", "MINAS", "NAJASA", "NUEVITAS", "SANTA CRUZ DEL SUR",
+    "SIBANICU", "SIERRA DE CUBITAS", "VERTIENTES"
   ],
-  "Las Tunas": [
-    "Amancio", "Colombia", "Jesús Menéndez", "Jobabo", "Las Tunas",
-    "Majibacoa", "Manatí", "Puerto Padre"
+  "LAS TUNAS": [
+    "AMANCIO", "COLOMBIA", "JESUS MENENDEZ", "JOBABO", "LAS TUNAS",
+    "MAJIBACOA", "MANATI", "PUERTO PADRE"
   ],
-  "Holguín": [
-    "Antilla", "Báguanos", "Banes", "Cacocum", "Calixto García", "Cueto",
-    "Frank País", "Gibara", "Holguín", "Mayarí", "Moa", "Rafael Freyre",
-    "Sagua de Tánamo", "Urbano Noris"
+  "HOLGUIN": [
+    "ANTILLA", "BAGUANOS", "BANES", "CACOCUM", "CALIXTO GARCIA", "CUETO",
+    "FRANK PAIS", "GIBARA", "HOLGUIN", "MAYARI", "MOA", "RAFAEL FREYRE",
+    "SAGUA DE TANAMO", "URBANO NORIS"
   ],
-  "Granma": [
-    "Bartolomé Masó", "Bayamo", "Buey Arriba", "Campechuela", "Cauto Cristo",
-    "Guisa", "Jiguaní", "Manzanillo", "Media Luna", "Niquero", "Pilón",
-    "Río Cauto", "Yara"
+  "GRANMA": [
+    "BARTOLOME MASO", "BAYAMO", "BUEY ARRIBA", "CAMPECHUELA", "CAUTO CRISTO",
+    "GUISA", "JIGUANI", "MANZANILLO", "MEDIA LUNA", "NIQUERO", "PILON",
+    "RIO CAUTO", "YARA"
   ],
-  "Santiago de Cuba": [
-    "Contramaestre", "Guamá", "Mella", "Palma Soriano", "San Luis",
-    "Santiago de Cuba", "Segundo Frente", "Songo-La Maya", "Tercer Frente"
+  "SANTIAGO DE CUBA": [
+    "CONTRAMAESTRE", "GUAMA", "MELLA", "PALMA SORIANO", "SAN LUIS",
+    "SANTIAGO DE CUBA", "SEGUNDO FRENTE", "SONGO-LA MAYA", "TERCER FRENTE"
   ],
-  "Guantánamo": [
-    "Baracoa", "Caimanera", "El Salvador", "Guantánamo", "Imías",
-    "Maisí", "Manuel Tames", "Niceto Pérez", "San Antonio del Sur",
-    "Yateras"
+  "GUANTANAMO": [
+    "BARACOA", "CAIMANERA", "EL SALVADOR", "GUANTANAMO", "IMIAS",
+    "MAISI", "MANUEL TAMES", "NICETO PEREZ", "SAN ANTONIO DEL SUR",
+    "YATERAS"
   ],
-  "Isla de la Juventud": [
-    "Isla de la Juventud"
+  "ISLA DE LA JUVENTUD": [
+    "ISLA DE LA JUVENTUD"
   ]
 }
