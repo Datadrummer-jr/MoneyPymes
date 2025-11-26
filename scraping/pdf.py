@@ -19,14 +19,15 @@ def save_pyme(index: int):
   with pdfplumber.open(rute_pymes) as pdf:
     mipymes = pdf.pages[index].extract_tables()
     mipymes = [ mf.del_salto(i) for i in mf.detectar_lista(lista=mipymes,key=formate_pyme) ]
+    cantidad = len(mipymes)
+
     indices = [ i[0] for i in mipymes]
     name = [ n[1] for n in mipymes]
     city = [ c[2] for c in mipymes]
     type = [ t[-2] for t in mipymes]
     activity = [ a[-1] for a in mipymes]
-    count = len(mipymes)
 
-    for i in range(count):
+    for i in range(cantidad):
       if len(city[i]) > 3:
        mipymes_actuales[indices[i]] = {'name': name[i], 'city': str(city[i]).upper(), 'subject': str(type[i]).upper(), 'activity':activity[i] }
       else:
@@ -35,7 +36,7 @@ def save_pyme(index: int):
     mf.save_json(mipymes_actuales,'../data/pymes.json')
     
 if __name__ == '__main__':
-  # Recomiendo que se scrapee por tramos en vezde todo de una vez:
+  # Recomiendo que se scrapee por tramos en vez de todo de una vez:
 
   # for i in range(len(pdfplumber.open(rute_pymes).pages)):
   #   save_pyme(i)
