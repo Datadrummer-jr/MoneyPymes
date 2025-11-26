@@ -196,64 +196,20 @@ def del_space(lista: list) -> list:
   return [i.strip() for i in lista]
 
 def del_salto(lista: list) -> list:
-  return [i.replace('\n', ' ') for i in lista  if i is not None]
+  return [i.replace('\n', ' ') for i in lista  if i is not None if type(i) == str]
 
 def pto_final(lista: list) -> list:
   return [i[:-1] for i in lista if i[-1] == '.']
 
-    
-def pymes_parser(texto: str, municipios_por_provincia: dict[list[str]]):
-    texto = texto.upper()
-    id_match = re.search(r"\d+", texto)
-    id = id_match.group() if id_match else None
-
-    tipos_clave = {
-        "MIPYME PRIVADA": "MIPYME PRIVADA",
-        "MIPYME ESTATAL": "MIPYME ESTATAL",
-        "CNA": "CNA",
-        "COOPERATIVA NO AGROPECUARIA": "COOPERATIVA NO AGROPECUARIA"
-    }
-
-    tipo_detectado = None
-    clave_tipo = None
-    for clave in tipos_clave.keys():
-        if clave in texto:
-            tipo_detectado = tipos_clave[clave]
-            clave_tipo = clave
-            break
-
-    provincia = None
-    municipio = None
-    empresa = None
-    actividad = None
-
-    if tipo_detectado:
-        partes = texto.split(clave_tipo, 1)
-        actividad = partes[1].strip() if len(partes) > 1 else None
-        bloque_empresa = partes[0].replace(id, "").strip()
-
-        # Detectar provincia y municipio
-        for prov in municipios_por_provincia.keys():
-            if prov in bloque_empresa:
-                provincia = prov
-                resto = bloque_empresa.replace(prov, "").strip()
-                for muni in municipios_por_provincia[prov]:
-                    if muni in resto:
-                        municipio = muni
-                        empresa = resto.replace(muni, "").strip()
-                        break
-                if not municipio:
-                    empresa = resto
-                break
-        if not provincia:
-            empresa = bloque_empresa
-
-    return id, {
-      "name": empresa,
-        "city": provincia,
-        "subject": tipo_detectado,
-        "activity": actividad
-    }
+def detectar_lista(lista: list, key: function) -> list:
+  salida = []
+  for i in lista:
+    if type(i) == list:
+      if len(i) > 0 and key(i):
+        salida.append(i)
+      else:
+        salida.extend(detectar_lista(i, key))
+  return salida
 
 
 

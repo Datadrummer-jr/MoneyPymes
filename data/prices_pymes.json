@@ -101,7 +101,26 @@
     "city": "Habana",
      "coordinates": [],
     "products": {
-
+        "bonabel" : 1200,
+        "crema": 1000,
+        "estropajo": 100,
+        "ron": {
+            "don_diego": 1000,
+            "ciudad...": 500
+        },
+        "ketchup": 600,
+        "papitas":220,
+        "pasta_de_tomate":600,
+        "planta_de_media": 200,
+        "toallitas": 100,
+        "detergente":{ 
+            "polvo": 500,
+            "líquido": 700
+        },
+        "bombillo": 3000,
+        "jabon":{
+            "baño": 200
+        }
     }
 }
 }
