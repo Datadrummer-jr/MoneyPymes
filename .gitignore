@@ -218,3 +218,6 @@ main.py
 
 # Permitir binarios compilados
 !*.pyd
+
+# Configuración de VSC
+.vscode
