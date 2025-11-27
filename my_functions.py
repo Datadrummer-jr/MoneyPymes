@@ -211,6 +211,11 @@ def detectar_lista(lista: list, key: function) -> list:
         salida.extend(detectar_lista(i, key))
   return salida
 
+def list_for_value(data: dict[dict], key:str,value: str =None, second_key=None):
+  if type(data) == dict:
+   return [ data[i][key][second_key] for i in data if data[i][key].strip() == value]
+
+
 
 
 

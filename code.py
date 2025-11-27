@@ -21,6 +21,7 @@ def graph_coin():
 
   usd = [tasas[i]["USD"] for i in tasas]
   euro = [tasas[i]["ECU"] for i in tasas]
+  usd_oficial = [ 123.6 for _ in usd]
 
   # Índices del inicio de cada mes (día 0 = 1 de enero)
   inicios = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273]
@@ -28,6 +29,7 @@ def graph_coin():
   plt.figure(figsize=(12, 6))
   plt.plot(days[0:304], usd[0:304], label='USD')
   plt.plot(days[0:304], euro[0:304], label = 'EURO')
+  # plt.plot(days[0:304], usd_oficial[0:304], label='USD en cadeca')
   plt.xticks(inicios, month, rotation=0)
   plt.title('Comparación del comportamiento del USD y el EURO entre enero y octubre de 2025.')
   plt.legend()
@@ -35,15 +37,21 @@ def graph_coin():
 
 def bar_pymes():
   data = mf.read_json("data/pymes.json")
-  subject = [ s['subject'] for s in data.values()]
-  provincias = [ c['city'] for c in data.values()]
-  mpmp = subject.count('MIPYME PRIVADA')
-  mpme =  subject.count('MIPYME ESTATAL')
-  cna =  subject.count('COOPERATIVA NO AGROPECUARIA') +  subject.count('CNA')
-  city = [provincias.count(i) for i in cities]
-  count_subject = np.arange(len(city))
+  city = [mf.list_for_value(data,key='city', value=i.upper(), second_key='type') for i in cities ]
+  presentes = [ data[i]['city'] for i in data ]
+  faltantes = [i for i in range(1,11289) if i not in presentes]
+  subject = None
+  # provincias =  mf.list_for_value(data,'city') 
+  # mpmp = subject.count('MIPYME PRIVADA')
+  # mpme =  subject.count('MIPYME ESTATAL')
+  # cna =  subject.count('COOPERATIVA NO AGROPECUARIA') +  subject.count('CNA')
+  # city = [provincias.count(i) for i in cities]
+  # count_subject = np.arange(len(city))
+  # fig, ax = plt.subplots()
+  return city
 
-bar_pymes()
+
+
 
 
 

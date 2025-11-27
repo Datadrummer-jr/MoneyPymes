@@ -31,7 +31,7 @@ def save_pyme(index: int):
       if len(city[i]) > 3:
        mipymes_actuales[indices[i]] = {'name': name[i], 'city': str(city[i]).upper(), 'subject': str(type[i]).upper(), 'activity':activity[i] }
       else:
-        mipymes_actuales[indices[i]] = {'name': name[i], 'city': abreviaturas[str(city[i]).upper()], 'subject': str(type[i]).upper(), 'activity':activity[i] }
+        mipymes_actuales[indices[i]] = {'name': name[i], 'city': abreviaturas[city[i]].upper(), 'subject': str(type[i]).upper(), 'activity':activity[i] }
     
     mf.save_json(mipymes_actuales,'../data/pymes.json')
     
@@ -43,8 +43,8 @@ if __name__ == '__main__':
   
   # Opción recomendada:
 
-  # for i in range(475,538):
-  #   save_pyme(i)
+  for i in range(100,200):
+    save_pyme(i)
 
   pass
   
