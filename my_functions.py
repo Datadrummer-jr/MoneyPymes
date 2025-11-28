@@ -213,7 +213,14 @@ def detectar_lista(lista: list, key: function) -> list:
 
 def list_for_value(data: dict[dict], key:str,value: str =None, second_key=None):
   if type(data) == dict:
-   return [ data[i][key] for i in data if str(data[i][key]).replace(' ','') == value]
+   return [ data[i][second_key] for i in data if str(data[i][key]).replace(' ','') == value]
+
+def first_count(lista:list, elemento):
+  contador = 0
+  for i in lista:
+    if str(elemento).replace(' ','') in i.replace(' ',''):
+       contador += 1
+  return contador
 
 
 

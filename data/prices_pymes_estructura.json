@@ -1,0 +1,15 @@
+{
+    "0":{
+        "name": null,
+        "sales_category":null,
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality":null,
+    "city": null,
+     "coordinates": [],
+    "products": {
+    }
+}
+}

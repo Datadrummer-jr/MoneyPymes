@@ -1,13 +1,13 @@
 {
     "0": {
-        "name": "Osymandias",
+        "name": "Ozymandias",
         "sales_category": "minorista",
         "horary":{
         "days": ["lunes", "domingo"],
         "hour" : "9:00 - 20.00"
     },
     "municipality":"DO",
-    "city": "Habana",
+    "city": "La Habana",
      "coordinates": [],
     "products": {
         "yogurt": {
@@ -20,10 +20,14 @@
             }
         },
         "cerveza":{
-            "cristal": 350,
+            "nacional":{
+            "cristal": 350
+            },
+            "importado":{
             "unlaguer": 230,
             "presidente": 230,
             "coprove": 230
+            }
         },
         "jugo":{
             "cajita": {
@@ -98,7 +102,7 @@
         "hour" : null
     },
     "municipality":"DO",
-    "city": "Habana",
+    "city": "La Habana",
      "coordinates": [],
     "products": {
         "bonabel" : 1200,
@@ -121,6 +125,154 @@
         "jabon":{
             "baño": 200
         }
+    }
+},
+   "2":{
+        "name": null,
+        "sales_category": "minorista",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality":"DO",
+    "city": "La Habana",
+     "coordinates": [],
+    "products": {
+        "cerveza":{
+            "importado":{
+                "la fria ": 250,
+                "belgar": 250
+            }
+        },
+        "refresco":{
+          "lata": 230
+        },
+         "arroz":{
+            "paquete": 630
+         },
+         "chicharo": {
+            "verde": 700
+         },
+         "cafe":1600,
+         "lomo_de_cerdo":{
+            "bandeja": 1300
+         },
+         "jabon":1600,
+         "aceite":1000,
+         "pan":{
+            "bolsa":230
+         },
+         "hamburguesas":550,
+         "galletas":{
+            "pequeña_3": 130,
+            "pequeña_4": 150,
+            "pequeño":200,
+            "pequeña_2":220,
+            "maria":350
+         },
+         "papitas":{
+            "mediano": 1000,
+            "grande": 1200
+         },
+         "vino seco": 350,
+        "mayonesa": {
+            "rayana": 700,
+            "malonese": 750
+        },
+         "leche_condesada": 550,
+         "fanguito": 600,
+         "nutella": 1100,
+         "ron":{
+            "pantaya": 1600,
+            "chanceler": 1500,
+            "fireone": 1500,
+            "royal blue": 600
+         },
+         "bombón":200,
+         "frijol negro": 900,
+         "harina": 630,
+         "pasta_de_tomate":450,
+         "ketchup":430,
+         "salsa de tomate": 400,
+         "salsa para amburguesa": 350,
+         "champú" : 700,
+         "suavizador": 650,
+         "pasta dental": 850,
+         "jabon de baño": 150,
+         "detergente":{
+            "líquido":150,
+            "polvo": 650
+         },
+         "gel de baño":{
+            "bebes": 400,
+            "adultos": 750
+         } ,
+         "toallitas":700,
+         "intimas": 900
+    }
+},
+    "3" :{
+        "name": null,
+        "sales_category": "minorista",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality":"DO",
+    "city": "La Habana",
+     "coordinates": [],
+    "products": {
+        "lomo_de_cerdo":{
+            "deshuesado": 1170
+        },
+        "picadillo": 320,
+        "arroz":290,
+        "azúcar": 290,
+        "harina":230,
+        "sal":100,
+        "leche": null,
+        "frijol":{
+            "negro": 380,
+           "colorado": 380
+        },
+        "yogurt":null,
+        "refresco":{
+            "lata":{
+                "pineapple": 230,
+                "orange":220
+            },
+            "polvo":35
+        },
+        "malta":250,
+        "cerveza":{
+            "importado":{
+                "unlaguer":220,
+                "la fria ":220
+            }
+        },
+        "jugo":{
+            "cajita":{
+                "pequeña":160
+            }
+        },
+        "papitas": 230,
+        "detergente":{
+            "polvo":650
+        },
+        "jabon":{
+            "baño":160
+        },
+        "pasta_de_tomate":450,
+        "leche_condesada":500,
+        "cafe":1400,
+        "aceite":990,
+        "galletas":{
+            "pequeño":135,
+            "pequeña_2":140,
+            "pequeña_3":90,
+            "pequeña_4":150
+        },
+        "panqué": 150
     }
 }
 }
