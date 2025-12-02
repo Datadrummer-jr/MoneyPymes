@@ -106,6 +106,12 @@ df_for_type_and_hab = pd.DataFrame({
    "Total": mf.sum_row([mpmp,mpme,cna,mipymes_indefinidas]) + [sum(mf.sum_row([mpmp,mpme,cna,mipymes_indefinidas]))], 
    "Cantidad de actores económicos por habitante": for_hab + [int(población_por_provincia["Cuba"]["total"] // sum(count_pymes))] })
 
+percent = (len(mipymes) * 100) / len(data)
+
+text_pyme = f"Para contar esta historia se obtuvieron datos de {len(mipymes)} actores económicos de diferentes dominios que  \
+representan sólo un { f"{round(percent,2)} %"} del total de los creados\n desde 2021, pero con planes  \
+de que este porciento alcance el 30 % en un futuro no muy lejano."
+
 
 
 

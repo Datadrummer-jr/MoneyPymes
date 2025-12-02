@@ -6,7 +6,7 @@
         "days": ["lunes", "domingo"],
         "hour" : "9:00 - 20.00"
     },
-    "municipality":"DO",
+    "municipality":"DIEZ DE OCTUBRE",
     "city": "La Habana",
      "coordinates": [],
     "products": {
@@ -101,7 +101,7 @@
         "days": null,
         "hour" : null
     },
-    "municipality":"DO",
+    "municipality":"DIEZ DE OCTUBRE",
     "city": "La Habana",
      "coordinates": [],
     "products": {
@@ -134,7 +134,7 @@
         "days": null,
         "hour" : null
     },
-    "municipality":"DO",
+    "municipality":"DIEZ DE OCTUBRE",
     "city": "La Habana",
      "coordinates": [],
     "products": {
@@ -218,7 +218,7 @@
         "days": null,
         "hour" : null
     },
-    "municipality":"DO",
+    "municipality":"DIEZ DE OCTUBRE",
     "city": "La Habana",
      "coordinates": [],
     "products": {
@@ -273,6 +273,100 @@
             "pequeña_4":150
         },
         "panqué": 150
+    }
+},
+"4":{
+        "name": null,
+        "sales_category":"minorista",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality": "PLAZA",
+    "city": "La Habana",
+     "coordinates": [],
+    "products": {
+        "jugo":{
+            "cajita":{
+               "grande":{
+                 "mango": 1010,
+                 "pera": 1010
+               }
+            },
+            "pomo":{
+                "melocotón": 910,
+                "manzana": 910
+            }
+        },
+        "mango_congelado": 360,
+        "cereal":{
+            "chocolate": 1377,
+            "maíz": 1433,
+            "chocolate_sin_gluten":1558,
+            "choco ch": 1609,
+            "maíz y arroz": 2075,
+            "Arroz":2093
+        }, 
+        "pescado":{
+            "macabi":1455,
+            "emperador":3420,
+            "cangrejo":2335,
+            "pulpo":6985,
+            "pez perro":3110
+        },
+        "queso":{
+            "crema":1079
+        },
+        "helado":{
+            "pote": 2190
+        },
+        "yogurt":{
+            "cabra":910
+        },
+        "culero":5015,
+        "papel_higiénico":5408,
+        "galletas":{
+            "cookies":865,
+            "wafer_rich":963,
+            "saladas":1510,
+            "blondies":1270,
+            "mini_cookies":825,
+            "canelos":1270,
+            "brownie":1270,
+            "galletas_dinosaurus":1415,
+            "barrita_de_chocolate":960,
+            "galletas_rizadas": 825,
+            "krittas_krit": 1865
+        },
+        "Crema al cacao con avellanas 1 sabor VOLA frasco vidrio 210G":1090,
+        "Crema al cacao con avellanas 2 sabores VOLA frasco vidrio 210 G": 1080,
+        "arroz":{
+            "paquete":{
+                "redondo": 1287,
+                "largo":780
+            }
+        },
+        "frijol":{
+            "alubia_blanca":930,
+            "alubia_pintadas":965,
+            "alubia_negra":920,
+            "lentejas":825,
+            "garbanzos":920
+        },
+        "guisantes_verdes":864,
+        "espinaca":220,
+        "romero":145,
+        "cúrcuma":320,
+        "chile_habanero":210,
+        "coco":220,
+        "bebidas":{
+            "ginebra":6455,
+             "vino":{
+            "tinto":1825,
+            "tamaral":2735,
+            "tinto Campo de Borja":1826
+        }
+        }
     }
 }
 }
