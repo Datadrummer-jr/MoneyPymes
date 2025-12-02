@@ -42,7 +42,7 @@ def graph_coin():
   plt.plot(days, mlc, label = 'MLC')
   # plt.plot(days[0:304], usd_oficial[0:304], label='USD en Cadeca')
   plt.xticks(inicios, month, rotation=0)
-  plt.title('Comparación del comportamiento del USD, el EURO y el MLC entre enero y octubre de 2025.')
+  plt.title('Comparación del comportamiento del USD, el EURO y el MLC entre enero y noviembre de 2025.')
   plt.legend()
   plt.show()
 
