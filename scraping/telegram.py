@@ -14,8 +14,8 @@ load_dotenv()
 API_ID = os.getenv("API_ID_TELEGRAM")
 API_HASH = os.getenv("API_HASH_TELEGRAM")
 
-inicio = datetime(2025, 11, 15, tzinfo=timezone.utc)
-final  = datetime(2025, 11, 20, hour=2, minute=30,tzinfo=timezone.utc)
+inicio = datetime(2025, 11, 17, tzinfo=timezone.utc)
+final  = datetime(2025, 11, 19, hour=1, minute=15,tzinfo=timezone.utc)
 
 async def qvapay():
     async with TelegramClient("datapyme", API_ID  ,API_HASH) as client:
