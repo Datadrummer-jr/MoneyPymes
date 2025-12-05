@@ -86,7 +86,7 @@ provincias = [abreviaturas[i] for i in city]
 types = [mf.list_for_value(data,'city',i , "subject") for i in cities]
 mpmp =  [mf.first_count(i, 'MIPYME PRIVADA') for i in types]
 mpme =  [mf.first_count(i, 'MIPYME ESTATAL') for i in types]
-cna =   mf.sum_row([[mf.first_count(i, 'COOPERATIVA NO AGROPECUARIA') for i in types], [mf.first_count(i, 'CNA') for i in types]])
+cna =   mf.sum_rows([[mf.first_count(i, 'COOPERATIVA NO AGROPECUARIA') for i in types], [mf.first_count(i, 'CNA') for i in types]])
 mipymes_indefinidas = [mf.del_space(i).count('MIPYME') for i in types]
 
 def ausent_detect(lista:list[str]):
@@ -99,13 +99,13 @@ def ausent_detect(lista:list[str]):
        return i
   return 'ok'
 
-df_for_type_and_hab = pd.DataFrame({
+df_for_type_and_hab = pl.DataFrame({
    "Provincias": provincias + ['Cuba'],
    "Mipymes Privadas": mpmp + [sum(mpmp)], 
    "Mipymes Estatales": mpme + [sum(mpme)] ,
    "Mipymes Indefinidas":  mipymes_indefinidas + [sum(mipymes_indefinidas)], 
    "CNA": cna + [sum(cna)],
-   "Total": mf.sum_row([mpmp,mpme,cna,mipymes_indefinidas]) + [sum(mf.sum_row([mpmp,mpme,cna,mipymes_indefinidas]))], 
+   "Total": mf.sum_rows([mpmp,mpme,cna,mipymes_indefinidas]) + [sum(mf.sum_rows([mpmp,mpme,cna,mipymes_indefinidas]))], 
    "Cantidad de actores económicos por habitante": for_hab + [int(población_por_provincia["Cuba"]["total"] // sum(count_pymes))] })
 
 percent = (len(mipymes) * 100) / len(data)
@@ -170,7 +170,7 @@ def bar_canasta_vs_pymes():
    
     fig.update_layout(height=800, barmode='group', xaxis_tickangle=-45, title="Gráficas comparativas del costo de los principales productos de la canasta básica contra los productos vendidos por mipymes")
     fig.show()
-
+    
 def qvapay_vs_el_toque():
   fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-21','2025-11-30', False, False)]
   usd_qvapay = []

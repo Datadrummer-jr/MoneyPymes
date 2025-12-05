@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 from urllib.parse import urlencode
 import subprocess
 import re
+from functools import reduce
 
 def you_type(cadena):
   if type(cadena) == int:
@@ -298,7 +299,7 @@ def parser_qvapay_2(text: str, usd: list[int|float] = [], mlc: list[int|float] =
     paypal.append(float(text[4][1:]) / float(text[2][1:])) if text[6] == "#PAYPAL" else None
     etecsa.append(float(text[4][1:]) / float(text[2][1:])) if text[6] == "#ETECSA" else None
 
-def sum_row(matriz: list) -> list[int|float]:
+def sum_rows(matriz: list) -> list[int|float]:
     try:
         n = len(matriz)
         if n == 1:
@@ -317,6 +318,29 @@ def sum_row(matriz: list) -> list[int|float]:
         for s in range(0,m*n,n):
           suma = sum([aux[m] for m in range(s,s+n)])
           row.append(suma)
+        return row
+    except IndexError as e:
+       return e
+    
+def rest_row(matriz: list) -> list[int|float]:
+    try:
+        n = len(matriz)
+        if n == 1:
+           return matriz
+        if all( str(i).isnumeric() for i in matriz):
+           return matriz
+        m = len(matriz[0])
+        for r in matriz:
+           if len(r) != m:
+              return IndexError
+        aux = []
+        row = []
+        for i in range(m):
+            for j in range(n):
+              aux.append(matriz[j][i])
+        for s in range(0,m*n,n):
+          resta = reduce(lambda x, y: x-y,[aux[m] for m in range(s,s+n)])
+          row.append(resta)
         return row
     except IndexError as e:
        return e

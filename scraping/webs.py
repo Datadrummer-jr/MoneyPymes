@@ -10,7 +10,7 @@ prices = []
 
 prices_pymes = mf.read_json(r"..\\data\\prices_pymes.json")
 
-def main():
+def sinterceros():
     with sync_playwright() as p:
         browser =  p.chromium.launch(
         headless=True
@@ -31,7 +31,7 @@ def main():
         browser.close()
 
 if __name__ == "__main__":
-    main()
+    sinterceros()
     prices_pymes["5"]["products"] = mf.list_to_dict(products[1:], [ int(mf.you_type(''.join(mf.del_value(p[:-3],","))))  for p in prices])
     mf.save_json(prices_pymes, r"..\\data\\prices_pymes.json")
 

@@ -652,20 +652,26 @@
     "products": {
         "salchichas": {
             "carrer":{
-            "min_1_caja":10200
+            "min_1_caja_de_4":10200
             },
             "bello":{
-            "min_1_caja":10200
+            "min_1_caja_de_4":10200
             }
         },
         "jabon de baño":{
             "eissu":{
-                "min_1_caja": 12288
+                "min_1_caja_de_96": 12288
             }
+        },
+        "codito":{
+             "min_1_caja_de_20":5600
         },
         "cerveza":{
             "importado":{
-                "eichbaum": {"min_5_caja": 5112}
+                "eichbaum": {"min_5_caja_de_24": 5112}
+            },
+            "holba":{
+                "min_1_caja_de_24":5352
             }
         },
         "cake":{
@@ -687,39 +693,42 @@
         },
         "galletas":{
             "prince":{
-                "min_1_caja":6840
+                "min_1_caja_de_24":6840
             },
             "keyf":{
-                "min_1_caja":2808
+                "min_1_caja_de_24":2808
+            },
+            "petit_beurre":{
+                "min_1_caja_de_12":2556
             }
         },
         "vinagre":{
-            "min_1_caja":4500
+            "min_1_caja_de_15":4500
         },
        "arroz":{
-          "min_1_caja":17650
+          "min_1_caja_de_30":17650
        },
        "zumo":{
-        "min_1_caja":3975
+        "min_1_caja_de_15":3975
        },
        "harina":{
-        "min_1_caja":13750
+        "min_1_caja_de_25kg":13750
        },
       "refresco":{
         "golden":{
-            "min_1_caja":750
+            "min_1_caja_de_24":750
         },
         "tuti_tuti":{
-            "min_1_caja":750
+            "min_1_caja_de_24":750
         }
       },
     "jugo":{
         "cajita":{
-            "min_1_caja":4968
+            "min_1_caja_27":4968
         }
     },
     "sopa instantánea":{
-        "min_1_caja":6960
+        "min_1_caja_de_48":6960
     },
     "pan":{
         "corteza_dura":{
@@ -742,5 +751,84 @@
             "5_unidades":350
         }
     }
+},
+   "7":{
+        "name": "Bravo 8",
+        "sales_category":"mayorista",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality": "DIEZ DE OCTUBRE",
+    "city":"La Habana",
+     "coordinates": [],
+    "products": {
+        "sazón":{
+            "min_1_caja_de_540":17280
+        },
+        "leche_condesada":{
+            "min_1_caja_de_24": 10080
+        },
+        "wisky":{
+            "min_1_caja_de_36": 9720
+        },
+        "yogurt":{
+            "pomo":{
+                "min_1_caja_de_9": 2200
+            }
+        }, 
+        "harina_de_trigo":{
+            "min_1_caja_de_25kg":9000
+        },
+        "galletas":{
+            "saltitacos":{
+                "min_1_caja_de_24":20880
+            },
+            "cookies":{
+                "min_1_caja_de_28": 10640
+            }
+        },
+        "mayonesa":{
+            "min_1_caja_de_12":12504
+        },
+        "ketchup":{
+            "min_1_caja_de_12":8700
+        },
+        "espaguetis":{
+            "min_1_caja_de_20":4800
+        } ,
+        "pollo":{
+        "2.5kg": {
+            "min_1_caja_de_4":19000
+        },
+        "2.0kg":{
+            "unidad":4035
+        }
+        } ,
+        "azucar blanca":{
+            "min_1_caja_de_10":5600
+        } ,
+        "Queso":{
+            "gouda":{
+                "min_1_caja_de_5":9610
+            }
+        },
+        "compota":{
+            "min_1_caja_de_24":6840
+        },
+        "harina":{
+            "unidad":465
+        },
+        "cerveza":{
+            "importado":{
+                "presidente":{
+                    "min_1_caja_de_24":5040
+                }
+            }
+        },
+        "red_bull":{
+            "min_1_caja_de_24":11280
+        }
+     }
 }
 }
