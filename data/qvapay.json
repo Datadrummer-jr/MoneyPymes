@@ -123472,5 +123472,2105 @@
         "operation": "Venta",
         "coin": "CUP",
         "price": 500.2
+    },
+    "621984": {
+        "date": "2025-11-16 00:32:04+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621983": {
+        "date": "2025-11-16 00:31:54+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.48
+    },
+    "621982": {
+        "date": "2025-11-16 00:30:42+00:00",
+        "operation": "Compra",
+        "coin": "Zelle",
+        "price": 1.0
+    },
+    "621981": {
+        "date": "2025-11-16 00:30:35+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.3
+    },
+    "621980": {
+        "date": "2025-11-16 00:30:30+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.08
+    },
+    "621979": {
+        "date": "2025-11-16 00:30:02+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.95
+    },
+    "621978": {
+        "date": "2025-11-16 00:29:04+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.95
+    },
+    "621977": {
+        "date": "2025-11-16 00:28:07+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621976": {
+        "date": "2025-11-16 00:27:52+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.95
+    },
+    "621975": {
+        "date": "2025-11-16 00:27:36+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621974": {
+        "date": "2025-11-16 00:27:08+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.95
+    },
+    "621973": {
+        "date": "2025-11-16 00:26:52+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 500.0
+    },
+    "621972": {
+        "date": "2025-11-16 00:26:52+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.16
+    },
+    "621971": {
+        "date": "2025-11-16 00:26:51+00:00",
+        "operation": "Venta",
+        "coin": "CLASICA",
+        "price": 1.04
+    },
+    "621970": {
+        "date": "2025-11-16 00:26:38+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 490.0
+    },
+    "621969": {
+        "date": "2025-11-16 00:26:23+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.2
+    },
+    "621968": {
+        "date": "2025-11-16 00:26:19+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621967": {
+        "date": "2025-11-16 00:26:18+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.95
+    },
+    "621966": {
+        "date": "2025-11-16 00:25:54+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621965": {
+        "date": "2025-11-16 00:25:40+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 498.0
+    },
+    "621964": {
+        "date": "2025-11-16 00:25:07+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.05
+    },
+    "621963": {
+        "date": "2025-11-16 00:24:57+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 505.0
+    },
+    "621962": {
+        "date": "2025-11-16 00:24:57+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 498.0
+    },
+    "621961": {
+        "date": "2025-11-16 00:24:53+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.74
+    },
+    "621960": {
+        "date": "2025-11-16 00:24:50+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621959": {
+        "date": "2025-11-16 00:23:49+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.57
+    },
+    "621958": {
+        "date": "2025-11-16 00:22:08+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 505.0
+    },
+    "621957": {
+        "date": "2025-11-16 00:19:50+00:00",
+        "operation": "Venta",
+        "coin": "TropiPay",
+        "price": 0.91
+    },
+    "621956": {
+        "date": "2025-11-16 00:18:13+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 511.56
+    },
+    "621955": {
+        "date": "2025-11-16 00:17:58+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 504.9
+    },
+    "621954": {
+        "date": "2025-11-16 00:17:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 470.0
+    },
+    "621953": {
+        "date": "2025-11-16 00:17:48+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.25
+    },
+    "621952": {
+        "date": "2025-11-16 00:17:06+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.25
+    },
+    "621951": {
+        "date": "2025-11-16 00:17:06+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621950": {
+        "date": "2025-11-16 00:16:14+00:00",
+        "operation": "Venta",
+        "coin": "USD",
+        "price": 1.0
+    },
+    "621949": {
+        "date": "2025-11-16 00:15:25+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 490.0
+    },
+    "621948": {
+        "date": "2025-11-16 00:15:11+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.48
+    },
+    "621947": {
+        "date": "2025-11-16 00:14:46+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 490.0
+    },
+    "621946": {
+        "date": "2025-11-16 00:13:46+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621945": {
+        "date": "2025-11-16 00:13:30+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621944": {
+        "date": "2025-11-16 00:11:58+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.0
+    },
+    "621943": {
+        "date": "2025-11-16 00:11:34+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621942": {
+        "date": "2025-11-16 00:11:09+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621941": {
+        "date": "2025-11-16 00:10:50+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621940": {
+        "date": "2025-11-16 00:10:20+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621939": {
+        "date": "2025-11-16 00:10:10+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621938": {
+        "date": "2025-11-16 00:10:07+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 511.51
+    },
+    "621937": {
+        "date": "2025-11-16 00:09:57+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621936": {
+        "date": "2025-11-16 00:09:41+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.04
+    },
+    "621935": {
+        "date": "2025-11-16 00:09:40+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621934": {
+        "date": "2025-11-16 00:09:18+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621933": {
+        "date": "2025-11-16 00:08:56+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.04
+    },
+    "621932": {
+        "date": "2025-11-16 00:08:15+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 504.99
+    },
+    "621931": {
+        "date": "2025-11-16 00:07:36+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.26
+    },
+    "621930": {
+        "date": "2025-11-16 00:07:19+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.04
+    },
+    "621929": {
+        "date": "2025-11-16 00:06:37+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.48
+    },
+    "621928": {
+        "date": "2025-11-16 00:03:21+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621927": {
+        "date": "2025-11-16 00:02:53+00:00",
+        "operation": "Venta",
+        "coin": "BANDECPREPAGO",
+        "price": 1.02
+    },
+    "621926": {
+        "date": "2025-11-16 00:01:38+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 491.29
+    },
+    "621925": {
+        "date": "2025-11-16 00:01:38+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 5.1
+    },
+    "621924": {
+        "date": "2025-11-16 00:01:31+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 511.46
+    },
+    "621923": {
+        "date": "2025-11-16 00:00:21+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.01
+    },
+    "621922": {
+        "date": "2025-11-16 00:00:05+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621921": {
+        "date": "2025-11-15 23:58:40+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.01
+    },
+    "621920": {
+        "date": "2025-11-15 23:58:30+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621919": {
+        "date": "2025-11-15 23:58:11+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.01
+    },
+    "621918": {
+        "date": "2025-11-15 23:57:49+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621917": {
+        "date": "2025-11-15 23:56:19+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621916": {
+        "date": "2025-11-15 23:55:56+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621915": {
+        "date": "2025-11-15 23:54:53+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621914": {
+        "date": "2025-11-15 23:54:27+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621913": {
+        "date": "2025-11-15 23:53:27+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 511.46
+    },
+    "621912": {
+        "date": "2025-11-15 23:53:23+00:00",
+        "operation": "Venta",
+        "coin": "USDT",
+        "price": 1.0
+    },
+    "621911": {
+        "date": "2025-11-15 23:53:19+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621910": {
+        "date": "2025-11-15 23:53:13+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621909": {
+        "date": "2025-11-15 23:51:39+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 150.0
+    },
+    "621908": {
+        "date": "2025-11-15 23:50:51+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.28
+    },
+    "621907": {
+        "date": "2025-11-15 23:50:32+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621906": {
+        "date": "2025-11-15 23:50:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621905": {
+        "date": "2025-11-15 23:50:00+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621904": {
+        "date": "2025-11-15 23:50:00+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.05
+    },
+    "621903": {
+        "date": "2025-11-15 23:49:59+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.28
+    },
+    "621902": {
+        "date": "2025-11-15 23:49:53+00:00",
+        "operation": "Venta",
+        "coin": "BANK_CUP",
+        "price": 499.0
+    },
+    "621901": {
+        "date": "2025-11-15 23:49:33+00:00",
+        "operation": "Compra",
+        "coin": "MLC",
+        "price": 2.21
+    },
+    "621900": {
+        "date": "2025-11-15 23:49:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.05
+    },
+    "621899": {
+        "date": "2025-11-15 23:47:53+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621898": {
+        "date": "2025-11-15 23:46:22+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 490.0
+    },
+    "621897": {
+        "date": "2025-11-15 23:45:30+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621896": {
+        "date": "2025-11-15 23:45:20+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 511.45
+    },
+    "621895": {
+        "date": "2025-11-15 23:44:26+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621894": {
+        "date": "2025-11-15 23:43:02+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 498.0
+    },
+    "621893": {
+        "date": "2025-11-15 23:42:16+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621892": {
+        "date": "2025-11-15 23:42:13+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 498.0
+    },
+    "621891": {
+        "date": "2025-11-15 23:41:15+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621890": {
+        "date": "2025-11-15 23:37:14+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.22
+    },
+    "621889": {
+        "date": "2025-11-15 23:36:43+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 170.0
+    },
+    "621888": {
+        "date": "2025-11-15 23:36:15+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.3
+    },
+    "621887": {
+        "date": "2025-11-15 23:35:45+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 170.0
+    },
+    "621886": {
+        "date": "2025-11-15 23:35:18+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.0
+    },
+    "621885": {
+        "date": "2025-11-15 23:34:11+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.32
+    },
+    "621884": {
+        "date": "2025-11-15 23:33:41+00:00",
+        "operation": "Compra",
+        "coin": "Bolsa",
+        "price": 500.0
+    },
+    "621883": {
+        "date": "2025-11-15 23:32:40+00:00",
+        "operation": "Venta",
+        "coin": "Zelle",
+        "price": 1.0
+    },
+    "621882": {
+        "date": "2025-11-15 23:31:50+00:00",
+        "operation": "Venta",
+        "coin": "Zelle",
+        "price": 1.06
+    },
+    "621881": {
+        "date": "2025-11-15 23:30:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621880": {
+        "date": "2025-11-15 23:30:10+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621879": {
+        "date": "2025-11-15 23:29:50+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.14
+    },
+    "621878": {
+        "date": "2025-11-15 23:29:08+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621877": {
+        "date": "2025-11-15 23:29:08+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.12
+    },
+    "621876": {
+        "date": "2025-11-15 23:29:04+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 500.0
+    },
+    "621875": {
+        "date": "2025-11-15 23:28:37+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621874": {
+        "date": "2025-11-15 23:28:27+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621873": {
+        "date": "2025-11-15 23:28:01+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.3
+    },
+    "621872": {
+        "date": "2025-11-15 23:26:07+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.5
+    },
+    "621871": {
+        "date": "2025-11-15 23:26:06+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 170.0
+    },
+    "621870": {
+        "date": "2025-11-15 23:26:05+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 515.0
+    },
+    "621869": {
+        "date": "2025-11-15 23:25:59+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621868": {
+        "date": "2025-11-15 23:24:54+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621867": {
+        "date": "2025-11-15 23:24:48+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621866": {
+        "date": "2025-11-15 23:24:26+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621865": {
+        "date": "2025-11-15 23:24:12+00:00",
+        "operation": "Compra",
+        "coin": "BANK_CUP",
+        "price": 503.8
+    },
+    "621864": {
+        "date": "2025-11-15 23:24:06+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621863": {
+        "date": "2025-11-15 23:23:53+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 490.0
+    },
+    "621862": {
+        "date": "2025-11-15 23:22:57+00:00",
+        "operation": "Venta",
+        "coin": "CLASICA",
+        "price": 1.07
+    },
+    "621861": {
+        "date": "2025-11-15 23:22:52+00:00",
+        "operation": "Compra",
+        "coin": "BANK_CUP",
+        "price": 504.64
+    },
+    "621860": {
+        "date": "2025-11-15 23:22:46+00:00",
+        "operation": "Compra",
+        "coin": "BANK_CUP",
+        "price": 504.64
+    },
+    "621859": {
+        "date": "2025-11-15 23:22:44+00:00",
+        "operation": "Compra",
+        "coin": "BANK_CUP",
+        "price": 504.64
+    },
+    "621858": {
+        "date": "2025-11-15 23:22:37+00:00",
+        "operation": "Compra",
+        "coin": "BANK_CUP",
+        "price": 504.64
+    },
+    "621857": {
+        "date": "2025-11-15 23:22:34+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621856": {
+        "date": "2025-11-15 23:22:17+00:00",
+        "operation": "Compra",
+        "coin": "BANK_CUP",
+        "price": 504.64
+    },
+    "621855": {
+        "date": "2025-11-15 23:22:14+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621854": {
+        "date": "2025-11-15 23:22:05+00:00",
+        "operation": "Compra",
+        "coin": "BANK_CUP",
+        "price": 504.64
+    },
+    "621853": {
+        "date": "2025-11-15 23:21:52+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621852": {
+        "date": "2025-11-15 23:21:15+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621851": {
+        "date": "2025-11-15 23:21:11+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621850": {
+        "date": "2025-11-15 23:21:04+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.22
+    },
+    "621849": {
+        "date": "2025-11-15 23:20:58+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621848": {
+        "date": "2025-11-15 23:20:54+00:00",
+        "operation": "Venta",
+        "coin": "CLASICA",
+        "price": 1.07
+    },
+    "621847": {
+        "date": "2025-11-15 23:20:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621846": {
+        "date": "2025-11-15 23:19:57+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621845": {
+        "date": "2025-11-15 23:19:33+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621844": {
+        "date": "2025-11-15 23:19:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621843": {
+        "date": "2025-11-15 23:19:08+00:00",
+        "operation": "Compra",
+        "coin": "MLC",
+        "price": 2.0
+    },
+    "621842": {
+        "date": "2025-11-15 23:19:04+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.2
+    },
+    "621841": {
+        "date": "2025-11-15 23:18:57+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621840": {
+        "date": "2025-11-15 23:18:47+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621839": {
+        "date": "2025-11-15 23:18:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621838": {
+        "date": "2025-11-15 23:18:03+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.59
+    },
+    "621837": {
+        "date": "2025-11-15 23:17:36+00:00",
+        "operation": "Venta",
+        "coin": "CLASICA",
+        "price": 1.06
+    },
+    "621836": {
+        "date": "2025-11-15 23:15:07+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621835": {
+        "date": "2025-11-15 23:14:09+00:00",
+        "operation": "Venta",
+        "coin": "Zelle",
+        "price": 1.05
+    },
+    "621834": {
+        "date": "2025-11-15 23:13:35+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.02
+    },
+    "621833": {
+        "date": "2025-11-15 23:12:39+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.33
+    },
+    "621832": {
+        "date": "2025-11-15 23:12:29+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.24
+    },
+    "621831": {
+        "date": "2025-11-15 23:11:52+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621830": {
+        "date": "2025-11-15 23:11:49+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.33
+    },
+    "621829": {
+        "date": "2025-11-15 23:11:48+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621828": {
+        "date": "2025-11-15 23:11:19+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621827": {
+        "date": "2025-11-15 23:10:14+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621826": {
+        "date": "2025-11-15 23:09:52+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.34
+    },
+    "621825": {
+        "date": "2025-11-15 23:09:24+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621824": {
+        "date": "2025-11-15 23:08:44+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621823": {
+        "date": "2025-11-15 23:07:08+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 144.0
+    },
+    "621822": {
+        "date": "2025-11-15 23:06:59+00:00",
+        "operation": "Compra",
+        "coin": "BANDECPREPAGO",
+        "price": 1.05
+    },
+    "621821": {
+        "date": "2025-11-15 23:06:52+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621820": {
+        "date": "2025-11-15 23:06:49+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 500.67
+    },
+    "621819": {
+        "date": "2025-11-15 23:05:37+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621818": {
+        "date": "2025-11-15 23:05:36+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621817": {
+        "date": "2025-11-15 23:05:32+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621816": {
+        "date": "2025-11-15 23:04:58+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 515.0
+    },
+    "621815": {
+        "date": "2025-11-15 23:04:22+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.2
+    },
+    "621814": {
+        "date": "2025-11-15 23:03:24+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 170.0
+    },
+    "621813": {
+        "date": "2025-11-15 23:02:09+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621812": {
+        "date": "2025-11-15 23:01:51+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 470.0
+    },
+    "621811": {
+        "date": "2025-11-15 23:00:49+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.47
+    },
+    "621810": {
+        "date": "2025-11-15 22:59:02+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621809": {
+        "date": "2025-11-15 22:57:45+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621808": {
+        "date": "2025-11-15 22:56:15+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621807": {
+        "date": "2025-11-15 22:55:47+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.2
+    },
+    "621806": {
+        "date": "2025-11-15 22:55:44+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 500.0
+    },
+    "621805": {
+        "date": "2025-11-15 22:55:03+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.22
+    },
+    "621804": {
+        "date": "2025-11-15 22:54:41+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621803": {
+        "date": "2025-11-15 22:52:43+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.7
+    },
+    "621802": {
+        "date": "2025-11-15 22:51:39+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.02
+    },
+    "621801": {
+        "date": "2025-11-15 22:51:23+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.02
+    },
+    "621800": {
+        "date": "2025-11-15 22:51:14+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 161.9
+    },
+    "621799": {
+        "date": "2025-11-15 22:50:49+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 152.09
+    },
+    "621798": {
+        "date": "2025-11-15 22:48:35+00:00",
+        "operation": "Venta",
+        "coin": "BANK_CUP",
+        "price": 506.28
+    },
+    "621797": {
+        "date": "2025-11-15 22:47:52+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 490.02
+    },
+    "621796": {
+        "date": "2025-11-15 22:47:39+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.18
+    },
+    "621795": {
+        "date": "2025-11-15 22:46:16+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621794": {
+        "date": "2025-11-15 22:45:10+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621793": {
+        "date": "2025-11-15 22:44:54+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.3
+    },
+    "621792": {
+        "date": "2025-11-15 22:44:44+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.4
+    },
+    "621791": {
+        "date": "2025-11-15 22:44:38+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621790": {
+        "date": "2025-11-15 22:43:44+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621789": {
+        "date": "2025-11-15 22:42:46+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 490.0
+    },
+    "621788": {
+        "date": "2025-11-15 22:42:43+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621787": {
+        "date": "2025-11-15 22:42:24+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621786": {
+        "date": "2025-11-15 22:42:17+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 495.0
+    },
+    "621785": {
+        "date": "2025-11-15 22:42:11+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.0
+    },
+    "621784": {
+        "date": "2025-11-15 22:41:01+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621783": {
+        "date": "2025-11-15 22:40:54+00:00",
+        "operation": "Compra",
+        "coin": "BANDECPREPAGO",
+        "price": 1.0
+    },
+    "621782": {
+        "date": "2025-11-15 22:40:11+00:00",
+        "operation": "Compra",
+        "coin": "Zelle",
+        "price": 1.03
+    },
+    "621781": {
+        "date": "2025-11-15 22:39:34+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.24
+    },
+    "621780": {
+        "date": "2025-11-15 22:39:17+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621779": {
+        "date": "2025-11-15 22:39:08+00:00",
+        "operation": "Venta",
+        "coin": "LTC",
+        "price": 506.12
+    },
+    "621778": {
+        "date": "2025-11-15 22:38:32+00:00",
+        "operation": "Venta",
+        "coin": "LTC",
+        "price": 506.12
+    },
+    "621777": {
+        "date": "2025-11-15 22:37:41+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621776": {
+        "date": "2025-11-15 22:37:20+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621775": {
+        "date": "2025-11-15 22:36:30+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621774": {
+        "date": "2025-11-15 22:35:42+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621773": {
+        "date": "2025-11-15 22:34:33+00:00",
+        "operation": "Compra",
+        "coin": "USDT",
+        "price": 1.0
+    },
+    "621772": {
+        "date": "2025-11-15 22:33:53+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 142.04
+    },
+    "621771": {
+        "date": "2025-11-15 22:33:27+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621770": {
+        "date": "2025-11-15 22:33:15+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621769": {
+        "date": "2025-11-15 22:32:18+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.25
+    },
+    "621768": {
+        "date": "2025-11-15 22:31:35+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 500.0
+    },
+    "621767": {
+        "date": "2025-11-15 22:31:31+00:00",
+        "operation": "Venta",
+        "coin": "ETECSA",
+        "price": 180.0
+    },
+    "621766": {
+        "date": "2025-11-15 22:31:30+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.17
+    },
+    "621765": {
+        "date": "2025-11-15 22:31:14+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 144.0
+    },
+    "621764": {
+        "date": "2025-11-15 22:29:43+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621763": {
+        "date": "2025-11-15 22:28:27+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.2
+    },
+    "621762": {
+        "date": "2025-11-15 22:28:12+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.23
+    },
+    "621761": {
+        "date": "2025-11-15 22:27:53+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621760": {
+        "date": "2025-11-15 22:27:04+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621759": {
+        "date": "2025-11-15 22:26:38+00:00",
+        "operation": "Compra",
+        "coin": "Bolsa",
+        "price": 494.0
+    },
+    "621758": {
+        "date": "2025-11-15 22:26:38+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621757": {
+        "date": "2025-11-15 22:26:34+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 140.07
+    },
+    "621756": {
+        "date": "2025-11-15 22:26:19+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621755": {
+        "date": "2025-11-15 22:25:53+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621754": {
+        "date": "2025-11-15 22:25:31+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621753": {
+        "date": "2025-11-15 22:24:51+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621752": {
+        "date": "2025-11-15 22:24:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621751": {
+        "date": "2025-11-15 22:24:10+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621750": {
+        "date": "2025-11-15 22:23:26+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621749": {
+        "date": "2025-11-15 22:23:23+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.24
+    },
+    "621748": {
+        "date": "2025-11-15 22:23:22+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621747": {
+        "date": "2025-11-15 22:22:55+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 135.34
+    },
+    "621746": {
+        "date": "2025-11-15 22:22:17+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621745": {
+        "date": "2025-11-15 22:21:44+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621744": {
+        "date": "2025-11-15 22:20:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621743": {
+        "date": "2025-11-15 22:20:21+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.48
+    },
+    "621742": {
+        "date": "2025-11-15 22:18:57+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621741": {
+        "date": "2025-11-15 22:18:18+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 495.1
+    },
+    "621740": {
+        "date": "2025-11-15 22:18:17+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.0
+    },
+    "621739": {
+        "date": "2025-11-15 22:17:42+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 0.0
+    },
+    "621738": {
+        "date": "2025-11-15 22:17:26+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 490.0
+    },
+    "621737": {
+        "date": "2025-11-15 22:15:25+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621736": {
+        "date": "2025-11-15 22:15:18+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.21
+    },
+    "621735": {
+        "date": "2025-11-15 22:14:40+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 508.96
+    },
+    "621734": {
+        "date": "2025-11-15 22:14:30+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.01
+    },
+    "621733": {
+        "date": "2025-11-15 22:13:47+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 508.96
+    },
+    "621732": {
+        "date": "2025-11-15 22:12:30+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 509.01
+    },
+    "621731": {
+        "date": "2025-11-15 22:12:14+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.48
+    },
+    "621730": {
+        "date": "2025-11-15 22:12:04+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.0
+    },
+    "621729": {
+        "date": "2025-11-15 22:10:58+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621728": {
+        "date": "2025-11-15 22:10:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 4.94
+    },
+    "621727": {
+        "date": "2025-11-15 22:09:24+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621726": {
+        "date": "2025-11-15 22:06:46+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 500.0
+    },
+    "621725": {
+        "date": "2025-11-15 22:06:42+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.15
+    },
+    "621724": {
+        "date": "2025-11-15 22:06:33+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621723": {
+        "date": "2025-11-15 22:06:14+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 508.96
+    },
+    "621722": {
+        "date": "2025-11-15 22:04:27+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621721": {
+        "date": "2025-11-15 22:04:24+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621720": {
+        "date": "2025-11-15 22:04:05+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 484.98
+    },
+    "621719": {
+        "date": "2025-11-15 22:03:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621718": {
+        "date": "2025-11-15 22:03:38+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.2
+    },
+    "621717": {
+        "date": "2025-11-15 22:02:49+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621716": {
+        "date": "2025-11-15 22:02:42+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621715": {
+        "date": "2025-11-15 22:01:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 525.0
+    },
+    "621714": {
+        "date": "2025-11-15 22:01:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621713": {
+        "date": "2025-11-15 22:01:35+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 509.03
+    },
+    "621712": {
+        "date": "2025-11-15 22:00:45+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621711": {
+        "date": "2025-11-15 22:00:06+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621710": {
+        "date": "2025-11-15 22:00:00+00:00",
+        "operation": "Venta",
+        "coin": "CLASICA",
+        "price": 1.06
+    },
+    "621709": {
+        "date": "2025-11-15 21:59:47+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 494.0
+    },
+    "621708": {
+        "date": "2025-11-15 21:59:23+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 510.0
+    },
+    "621707": {
+        "date": "2025-11-15 21:58:37+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.2
+    },
+    "621706": {
+        "date": "2025-11-15 21:58:30+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 520.0
+    },
+    "621705": {
+        "date": "2025-11-15 21:57:07+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.05
+    },
+    "621704": {
+        "date": "2025-11-15 21:56:29+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.25
+    },
+    "621703": {
+        "date": "2025-11-15 21:56:11+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621702": {
+        "date": "2025-11-15 21:56:04+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 520.0
+    },
+    "621701": {
+        "date": "2025-11-15 21:55:03+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 512.82
+    },
+    "621700": {
+        "date": "2025-11-15 21:54:29+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 508.96
+    },
+    "621699": {
+        "date": "2025-11-15 21:54:05+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.02
+    },
+    "621698": {
+        "date": "2025-11-15 21:52:40+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 120.0
+    },
+    "621697": {
+        "date": "2025-11-15 21:52:36+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.02
+    },
+    "621696": {
+        "date": "2025-11-15 21:52:27+00:00",
+        "operation": "Venta",
+        "coin": "Zelle",
+        "price": 1.06
+    },
+    "621695": {
+        "date": "2025-11-15 21:52:02+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 508.96
+    },
+    "621694": {
+        "date": "2025-11-15 21:50:15+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621693": {
+        "date": "2025-11-15 21:50:03+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.28
+    },
+    "621692": {
+        "date": "2025-11-15 21:48:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621691": {
+        "date": "2025-11-15 21:47:20+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 120.0
+    },
+    "621690": {
+        "date": "2025-11-15 21:47:00+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621689": {
+        "date": "2025-11-15 21:45:39+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.25
+    },
+    "621688": {
+        "date": "2025-11-15 21:45:30+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.26
+    },
+    "621687": {
+        "date": "2025-11-15 21:45:17+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621686": {
+        "date": "2025-11-15 21:44:19+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 520.0
+    },
+    "621685": {
+        "date": "2025-11-15 21:43:38+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.33
+    },
+    "621684": {
+        "date": "2025-11-15 21:43:08+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.03
+    },
+    "621683": {
+        "date": "2025-11-15 21:42:38+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621682": {
+        "date": "2025-11-15 21:41:55+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.15
+    },
+    "621681": {
+        "date": "2025-11-15 21:40:58+00:00",
+        "operation": "Venta",
+        "coin": "CLASICA",
+        "price": 1.06
+    },
+    "621680": {
+        "date": "2025-11-15 21:40:11+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 503.01
+    },
+    "621679": {
+        "date": "2025-11-15 21:40:08+00:00",
+        "operation": "Venta",
+        "coin": "CLASICA",
+        "price": 1.06
+    },
+    "621678": {
+        "date": "2025-11-15 21:38:53+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.25
+    },
+    "621677": {
+        "date": "2025-11-15 21:38:32+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 503.0
+    },
+    "621676": {
+        "date": "2025-11-15 21:37:55+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.26
+    },
+    "621675": {
+        "date": "2025-11-15 21:37:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 489.9
+    },
+    "621674": {
+        "date": "2025-11-15 21:37:34+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621673": {
+        "date": "2025-11-15 21:37:34+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621672": {
+        "date": "2025-11-15 21:37:18+00:00",
+        "operation": "Compra",
+        "coin": "ETECSA",
+        "price": 143.48
+    },
+    "621671": {
+        "date": "2025-11-15 21:37:03+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 489.99
+    },
+    "621670": {
+        "date": "2025-11-15 21:36:35+00:00",
+        "operation": "Venta",
+        "coin": "MLC",
+        "price": 2.3
+    },
+    "621669": {
+        "date": "2025-11-15 21:36:11+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 503.0
+    },
+    "621668": {
+        "date": "2025-11-15 21:36:02+00:00",
+        "operation": "Venta",
+        "coin": "BANK_CUP",
+        "price": 499.09
+    },
+    "621667": {
+        "date": "2025-11-15 21:35:37+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 519.48
+    },
+    "621666": {
+        "date": "2025-11-15 21:35:09+00:00",
+        "operation": "Venta",
+        "coin": "BANK_CUP",
+        "price": 499.09
+    },
+    "621665": {
+        "date": "2025-11-15 21:34:48+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 498.01
+    },
+    "621664": {
+        "date": "2025-11-15 21:33:50+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.24
+    },
+    "621663": {
+        "date": "2025-11-15 21:31:54+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621662": {
+        "date": "2025-11-15 21:31:42+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621661": {
+        "date": "2025-11-15 21:30:47+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621660": {
+        "date": "2025-11-15 21:30:20+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.13
+    },
+    "621659": {
+        "date": "2025-11-15 21:29:08+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 495.0
+    },
+    "621658": {
+        "date": "2025-11-15 21:28:39+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621657": {
+        "date": "2025-11-15 21:27:25+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621656": {
+        "date": "2025-11-15 21:27:22+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 506.0
+    },
+    "621655": {
+        "date": "2025-11-15 21:26:48+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 510.0
+    },
+    "621654": {
+        "date": "2025-11-15 21:26:21+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 506.0
+    },
+    "621653": {
+        "date": "2025-11-15 21:26:08+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 530.0
+    },
+    "621652": {
+        "date": "2025-11-15 21:25:46+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 500.0
+    },
+    "621651": {
+        "date": "2025-11-15 21:25:46+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.16
+    },
+    "621650": {
+        "date": "2025-11-15 21:25:05+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621649": {
+        "date": "2025-11-15 21:25:05+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 530.0
+    },
+    "621648": {
+        "date": "2025-11-15 21:23:56+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 530.0
+    },
+    "621647": {
+        "date": "2025-11-15 21:22:55+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621646": {
+        "date": "2025-11-15 21:22:55+00:00",
+        "operation": "Compra",
+        "coin": "CLASICA",
+        "price": 1.03
+    },
+    "621645": {
+        "date": "2025-11-15 21:22:42+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.46
+    },
+    "621644": {
+        "date": "2025-11-15 21:22:39+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 520.0
+    },
+    "621643": {
+        "date": "2025-11-15 21:22:38+00:00",
+        "operation": "Compra",
+        "coin": "USD",
+        "price": 1.0
+    },
+    "621642": {
+        "date": "2025-11-15 21:21:13+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621641": {
+        "date": "2025-11-15 21:21:03+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621640": {
+        "date": "2025-11-15 21:17:37+00:00",
+        "operation": "Venta",
+        "coin": "Bolsa",
+        "price": 502.17
+    },
+    "621639": {
+        "date": "2025-11-15 21:17:04+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 470.0
+    },
+    "621638": {
+        "date": "2025-11-15 21:15:23+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 520.69
+    },
+    "621637": {
+        "date": "2025-11-15 21:14:37+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 511.51
+    },
+    "621636": {
+        "date": "2025-11-15 21:14:24+00:00",
+        "operation": "Venta",
+        "coin": "CUP",
+        "price": 505.0
+    },
+    "621635": {
+        "date": "2025-11-15 21:14:11+00:00",
+        "operation": "Compra",
+        "coin": "CUP",
+        "price": 500.0
     }
 }
