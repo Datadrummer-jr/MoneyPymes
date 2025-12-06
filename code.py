@@ -37,23 +37,48 @@ def graph_coin():
   usd_oficial = [ 123.6 for _ in usd]
 
   inicios = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 302]
+
+  fig = go.Figure(data=[
+  go.Scatter(x=days, y=usd, mode="lines", name= 'USD'),
+  go.Scatter(x=days, y=euro, mode="lines", name= 'EURO'),
+  go.Scatter(x=days, y=mlc, mode="lines", name= 'MLC')
+  ]
+  )
+
+  fig.update_xaxes(
+   tickvals=inicios,   # posiciones
+    ticktext=month,     # etiquetas
+    tickangle=0
+  )
+  fig.update_layout(title='Comparación del comportamiento del USD, el EURO y el MLC entre enero y noviembre de 2025.')
+  fig.show()
   
-  plt.figure(figsize=(12, 6))
-  plt.plot(days, usd, label='USD')
-  plt.plot(days, euro, label = 'EURO')
-  plt.plot(days, mlc, label = 'MLC')
-  # plt.plot(days[0:304], usd_oficial[0:304], label='USD en Cadeca')
-  plt.xticks(inicios, month, rotation=0)
-  plt.title('Comparación del comportamiento del USD, el EURO y el MLC entre enero y noviembre de 2025.')
-  plt.legend()
-  plt.show()
+  # plt.figure(figsize=(12, 6))
+  # plt.plot(days, usd, label='USD')
+  # plt.plot(days, euro, label = 'EURO')
+  # plt.plot(days, mlc, label = 'MLC')
+  # # plt.plot(days[0:304], usd_oficial[0:304], label='USD en Cadeca')
+  # plt.xticks(inicios, month, rotation=0)
+  # plt.title('Comparación del comportamiento del USD, el EURO y el MLC entre enero y noviembre de 2025.')
+  # plt.legend()
+  # plt.show()
 
 def bar_pymes():      
-  count_city = np.arange(len(count_pymes))
-  plt.figure(figsize=(14, 6))
-  plt.bar(count_city, count_pymes)
-  plt.xticks(count_city,city, rotation=0)
-  plt.show()
+  
+  fig = go.Figure(data=go.Bar(
+     x= city,
+     y = count_pymes
+  ))
+  fig.update_xaxes()
+
+  # Matplotlib
+  # count_city = np.arange(len(count_pymes))
+  # plt.figure(figsize=(14, 6))
+  # plt.bar(count_city, count_pymes)
+  # plt.xticks(count_city,city, rotation=0)
+  # plt.show()
+  fig.update_layout(title= "Comparación de la cantidad de actores económicos creados desde 2021 por provincia.")
+  fig.show()
 
 
 def compra_máxima(prices: list[int|float], escala : int) -> int:
@@ -65,7 +90,7 @@ def compra_máxima(prices: list[int|float], escala : int) -> int:
     return int(max(matriz))
       
 def compra_por_escala(escala: int):
-   máximos = [compra_máxima(mf.dict_num_values(mipymes[i]['products']), escala) for i in mipymes if mipymes[i]["sales_category"] == "minorista"]
+   máximos = [compra_máxima(mf.dict_num_values(mipymes[i]['products']), escala) for i in mipymes if mipymes[i]["sales_category"] == "minorista" and mipymes[i]["currency"] == "CUP"]
    return  int(np.median(máximos))
 
 def max_bar():
@@ -172,7 +197,7 @@ def bar_canasta_vs_pymes():
     fig.show()
     
 def qvapay_vs_el_toque():
-  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-16','2025-11-30', False, False)]
+  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-12','2025-11-30', False, False)]
   usd_qvapay = []
   for fecha in fechas:
     offers = []
@@ -187,7 +212,7 @@ def qvapay_vs_el_toque():
     go.Line(name="El Toque", x=fechas, y=medias_el_toque),
     go.Line(name="QvaPay", x=fechas, y=medias_qvapay)
   ])
-  fig.update_layout( barmode='group', title= "Gráfica comparativa de los precios media del USD entre El Toque y QvaPay.")
+  fig.update_layout( barmode='group', title= "Gráfica comparativa de los precios media del USD entre El Toque y QvaPay en el transcurso del mes de noviembre de 2025.")
   fig.show()
 
 
