@@ -357,5 +357,12 @@ def list_to_dict(keys: list[str], values: list) -> dict:
     dict[keys[i]] = values[i]
   return dict
 
-
+def insert_in_list(iter: list, element, index: int = -1):
+    left = iter[:index]
+    right = iter[index:]
+    if index == -1:
+       return iter + [element]
+    if index == 0:
+        return [element] + iter
+    return  left + [element] + right
   

@@ -2564,5 +2564,67 @@
             "Pan Molde 550 G, Lasqueado Y Empaquetado": 1.62,
             "Pan Hamburguesa 80 G Con Ajonjolí, 6 Unidades, 480 G": 1.32
         }
+    },
+    "21":{
+        "name": "REALJO",
+        "sales_category":"mayorista",
+         "currency": "USD",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality": "Plaza de la Revolución",
+    "city": "La Habana",
+     "coordinates": [],
+    "products": {
+        "azúcar":{
+            "saco_50lb": 24.00,
+            "saco_50kg": 53.50,
+            "min_1_caja_1kg":1.18
+        },
+        "frijoles_negro":{
+            "min_1_caja": 1.53
+        },
+        "espaguetis":{
+            "min_5_caja_unidad":0.48
+        },
+        "pasta_de_tomate":{
+            "min_1_caja": 0.63
+        },
+        "extracto_de_tomate": {
+            "min_1_caja":0.35
+        },
+        "harina":{
+            "min_1_caja_de_25kg":18.0
+        },
+        "pollo":{
+           "2.0kg":{
+            "min_1_caja":49.80
+           }
+        },
+        "whisky Blend Seven":{
+            "min_1_caja":2.30
+        },
+        "whisky Noble Vox_1l":{
+            "min_1_caja":2.40
+        },
+        "whisky Noble Vox_330ml":{
+            "min_1_caja":0.86
+        }
     }
+},
+"22":{
+        "name": "ksk",
+        "sales_category":null,
+         "currency": "CUP",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality":null,
+    "city": null,
+     "coordinates": [],
+    "products": {
+    }
+}
 }

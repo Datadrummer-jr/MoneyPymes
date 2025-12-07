@@ -218,6 +218,7 @@ def qvapay_vs_el_toque():
     usd_qvapay.append(offers)
   medias_qvapay = [ float(np.mean(m)) for m in usd_qvapay]
   medias_el_toque = [el_toque[fecha]['USD'] for fecha in fechas]
+  medias_qvapay[11] =  (medias_qvapay[10] + medias_qvapay[12]) / 2
 
   fig = go.Figure(data=[
     go.Line(name="El Toque", x=fechas, y=medias_el_toque),
