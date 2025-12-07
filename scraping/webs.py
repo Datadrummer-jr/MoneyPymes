@@ -5,8 +5,6 @@ import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import my_functions as mf
 
-
-
 prices_pymes = mf.read_json(r"..\\data\\prices_pymes.json")
 
 def Sinterceros():
@@ -79,8 +77,59 @@ def Cubanearme():
       
         browser.close()
 
+def Renova():
+    products = []
+    prices = []
+    with sync_playwright() as p:
+        browser =  p.chromium.launch(
+        headless=True
+        )
+        page =  browser.new_page()
+        page.goto("file:///D:/download/Download_Edge/Todos%20los%20productos%20%E2%80%93%20P%C3%A1gina%205%20%E2%80%93%20RENOVA%20S.R.L..html", wait_until="domcontentloaded")
+        
+        web_poducts =  page.locator("h2.woocommerce-loop-product__title")
+
+        web_prices =  page.locator("bdi")
+
+        for i in range(web_poducts.count()):
+          products.append(web_poducts.nth(i).inner_text().strip())
+        
+        for j in range(web_prices.count()):
+          prices.append(float(web_prices.nth(j).inner_text()[6:].replace(",", "")))
+        print(len(prices))
+        print(len(products))
+        prices_pymes["10"]["products"].update(mf.list_to_dict(products, prices))
+      
+        browser.close()
+
+def JKY_S_R_L():
+    products = []
+    prices = []
+    with sync_playwright() as p:
+        browser =  p.chromium.launch(
+        headless=True
+        )
+        page =  browser.new_page()
+        page.goto("file:///D:/download/Download_Edge/Mercado%20Habana%20-%20Envios%20Cuba,%20Paquetes%20a%20Cuba%20-%20Bodeg%C3%B3n%20Wapa.html", wait_until="domcontentloaded")
+        
+        web_poducts = page.locator("a.text-capitalize")
+
+        web_prices =  page.locator("span.text-dark")
+
+        for i in range(web_poducts.count()):
+          products.append(web_poducts.nth(i).inner_text().strip())
+        
+        for j in range(web_prices.count()):
+          precio = web_prices.nth(j).inner_text()
+          if str(precio)[0] == "$":
+           prices.append(float(precio[:-3][1:]))
+
+        prices_pymes["20"]["products"].update(mf.list_to_dict(products, prices))
+      
+        browser.close()
+
 if __name__ == "__main__":
-    Cubanearme()
+    JKY_S_R_L()
     mf.save_json(prices_pymes, r"..\\data\\prices_pymes.json")
 
 

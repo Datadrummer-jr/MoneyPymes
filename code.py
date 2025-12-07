@@ -90,10 +90,21 @@ def compra_máxima(prices: list[int|float], escala : int) -> int:
     return int(max(matriz))
       
 def compra_por_escala(escala: int):
-   máximos = [compra_máxima(mf.dict_num_values(mipymes[i]['products']), escala) for i in mipymes if mipymes[i]["sales_category"] == "minorista" and mipymes[i]["currency"] == "CUP"]
+   máximos = [compra_máxima([int(i) for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+              if mipymes[i]["sales_category"] == "minorista" and mipymes[i]["currency"] == "CUP"
+              else 
+              compra_máxima([int(i*el_toque["2023-10-31"]["ECU"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+              if mipymes[i]["sales_category"] == "minorista" and mipymes[i]["currency"] == "EURO" 
+              else
+              compra_máxima([int(i*el_toque["2023-10-31"]["USD"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+              if mipymes[i]["sales_category"] == "minorista" and mipymes[i]["currency"] == "USD"
+              else 0
+              for i in mipymes]
+   máximos = [ m for m in máximos if m != 0]
    return  int(np.median(máximos))
 
 def max_bar():
+
   max_products = [compra_por_escala(s) for s in salarios['44_horas']]
   count_escalas = np.arange(len(salarios['44_horas']))
   plt.figure(figsize=(16, 10))
@@ -197,7 +208,7 @@ def bar_canasta_vs_pymes():
     fig.show()
     
 def qvapay_vs_el_toque():
-  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-12','2025-11-30', False, False)]
+  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-15','2025-11-30', False, False)]
   usd_qvapay = []
   for fecha in fechas:
     offers = []
