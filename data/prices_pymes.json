@@ -4363,5 +4363,19 @@
             "Acondicionador Prebióticos Y Biotina, 620 Ml": 5.8,
             "Fregadero De 1 Cubeta, \"SULLA\"": 32.08
         }
+    },
+     "32":{
+        "name": "El Rey",
+        "sales_category":"minorista",
+         "currency": "CUP",
+        "horary":{
+        "days": null,
+        "hour" : null
+    },
+    "municipality":null,
+    "city": "La Habana",
+     "coordinates": [],
+    "products": {
     }
+}
 }

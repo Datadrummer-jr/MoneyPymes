@@ -209,7 +209,7 @@ def bar_canasta_vs_pymes():
     fig.show()
     
 def qvapay_vs_el_toque():
-  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-15','2025-11-30', False, False)]
+  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-8','2025-11-30', False, False)]
   usd_qvapay = []
   for fecha in fechas:
     offers = []
@@ -219,7 +219,7 @@ def qvapay_vs_el_toque():
     usd_qvapay.append(offers)
   medias_qvapay = [ float(np.mean(m)) for m in usd_qvapay]
   medias_el_toque = [el_toque[fecha]['USD'] for fecha in fechas]
-  medias_qvapay[11] =  (medias_qvapay[10] + medias_qvapay[12]) / 2
+  medias_qvapay[18] =  (medias_qvapay[17] + medias_qvapay[19]) / 2
 
   fig = go.Figure(data=[
     go.Line(name="El Toque", x=fechas, y=medias_el_toque),
@@ -227,6 +227,26 @@ def qvapay_vs_el_toque():
   ])
   fig.update_layout( barmode='group', title= "Gráfica comparativa de los precios media del USD entre El Toque y QvaPay en el transcurso del mes de noviembre de 2025.")
   fig.show()
+
+def minorista_vs_mayorista():
+   minoristas = [ [ usd * última_tasa["USD"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "USD" else
+                 [ usd * última_tasa["ECU"] for usd in mf.dict_num_values(mipymes[i])] if  mipymes[i]["currency"] == "EURO"
+                 else mf.dict_num_values(mipymes[i])  for i in  mipymes if mipymes[i]["sales_category"] == "minorista"]
+   mayoristas = [ [ usd * última_tasa["USD"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "USD" else
+                 [ usd * última_tasa["ECU"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "EURO"
+                 else mf.dict_num_values(mipymes[i]) for i in mipymes if mipymes[i]["sales_category"] == "mayorista" ]
+   
+   media_minorista = np.median(mf.aplanar_lista(minoristas))
+   media_mayorista = np.median(mf.aplanar_lista(mayoristas))
+
+   fig = go.Figure(data=[
+      go.Bar(x= ["Minorista"], y= [media_minorista], name="Minorista"),
+      go.Bar(x= ["Mayorista"], y= [media_mayorista], name="Mayorista")
+   ])
+
+   fig.update_layout(title= "Gráfica comparando el precio medio entre los preductos vendidos de forma minorista y de forma mayorista.")
+   fig.show()
+
 
 
 
