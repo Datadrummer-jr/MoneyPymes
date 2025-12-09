@@ -4364,18 +4364,59 @@
             "Fregadero De 1 Cubeta, \"SULLA\"": 32.08
         }
     },
-     "32":{
-        "name": "El Rey",
-        "sales_category":"minorista",
-         "currency": "CUP",
-        "horary":{
-        "days": null,
-        "hour" : null
-    },
-    "municipality":null,
-    "city": "La Habana",
-     "coordinates": [],
-    "products": {
+    "32": {
+        "name": "ZONA K_LIENTE",
+        "sales_category": "minorista",
+        "currency": "CUP",
+        "horary": {
+            "days": null,
+            "hour": null
+        },
+        "municipality": null,
+        "city": "La Habana",
+        "coordinates": [],
+        "products": {
+            "Bolsa de lona rayas medianas, AB21005 (colores surtidos)": 929.5,
+            "Hilo de coser amarillo 100% polyester, cono de 5000 YDS 40/2": 702.0,
+            "Palangana Pequeña Beige (704)": 845.0,
+            "Palangana Pequeña Verde (704)": 845.0,
+            "Palangana Pequeña Rosa Viejo (704)": 845.0,
+            "Organizador Multiusos L54-LX3673 Largo": 1105.0,
+            "Relax total": 1284.0,
+            "Plato hondo cerámica 9\" (PF-9-Círculo)": 533.0,
+            "Tazón de cerámica 7\" (TZ-7-Círculo)": 409.5,
+            "Cenicero de cristal (G1017)": 507.0,
+            "Juego de tazón y plato hondo cerámica": 906.25,
+            "Protector de Drenaje Set 4 PCS (CFCJ003)": 585.0,
+            "Set jarra y 4 vasos plásticos, Color Rosado 18x13.5x21 (J06-6202-4 2.5 L)": 2340.0,
+            "Jarra plástica 2.5 L (G05-2121)": 1430.0,
+            "Set de 6 tazas con plato 220CC (YY066B-200 CC)": 3770.0,
+            "Set de 6 tazas con plato 220CC (YY66C-200 CC)": 3770.0,
+            "Exprimidor plástico, Color Amarillo (1189)": 637.0,
+            "Exprimidor plástico, Color Rosado (1189)": 637.0,
+            "Exprimidor plástico, Color Azul (1189)": 637.0,
+            "Set de jarra y 4 vasos plásticos, Color Blanco 18*13.5*21 (J06-6202-4 2.5 L)": 2340.0,
+            "Set de jarra y 4 vasos plásticos Color Gris 18*13.5*21 (J06-6202-4 2.5 L)": 2340.0,
+            "Portacubierto Verde (859)": 1105.0,
+            "Pelador (CFCJ027) - Rosado": 312.0,
+            "Pelador de 3 funciones (CFCJ016) - Rojo": 585.0,
+            "Pelador de 3 funciones (CFCJ016) - Negro": 585.0,
+            "Pelador de 3 funciones (CFCJ016) - Verde": 585.0,
+            "Porta-cubierto 17*9*14 (Y165-8210) Verde": 604.5,
+            "Porta-cubierto 17*9*14 (Y165-8210) Verde olivo": 604.5,
+            "Escurridor de platos 38 X 27 X 14 (J35-S-800L) - Azul": 2990.0,
+            "Escurridor de platos 38 X 27 X 14 (J35-S-800L) - Verde": 2990.0,
+            "Cortina para baño EVA, 180X180 cm, 100% Polyester (B-08) - Azul": 3412.5,
+            "Cortina para baño EVA 180X180 CM (A-05) (estampados varios)": 1950.0,
+            "Cortina para baño EVA, 180X180 cm, 100% Polyester (B-08) - Blanco": 3412.5,
+            "Cortina para baño EVA, 180X180 cm, 100% Polyester (B-08) - Gris": 3412.5,
+            "Set de 6 Tazas con platos 220CC (YY66D-200 CC)": 3770.0,
+            "Cortina para baño EVA - 180X180 cm - 100% Polyester (B-08) - Beige": 3412.5,
+            "Sacapunta (AG914) - Naranja": 149.5,
+            "Juego de 6 vasos de vidrio (Y2001-1/MP401-1/14008)": 2535.0,
+            "Bolígrafo de gel 6 colores (20001-6A)": 533.0,
+            "Sacapunta (AG914) - Verde": 149.5,
+            "Sacapunta (AG914) - Rosado": 149.5
+        }
     }
-}
 }

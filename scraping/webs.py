@@ -153,8 +153,34 @@ def Envios_Cuba_Isla():
       
         browser.close()
 
+def Super_Fácil():
+    products_with_prices = []
+    products = []
+    prices = []
+    with sync_playwright() as p:
+        browser =  p.chromium.launch(
+        headless=True
+        )
+        page =  browser.new_page()
+        page.goto("file:///D:/download/Download_Edge/Productos%20de%20calidad%20art%C3%ADstica%20y%20utilitaria_zona_kliente.html", wait_until="domcontentloaded")
+        
+        web_poducts = page.locator("div.prod-item-info")
+
+        for i in range(web_poducts.count()):
+          producto = web_poducts.nth(i).all()
+          for j in producto:
+             if j.inner_text()[-3:] == "cup":
+               products_with_prices.extend(j.inner_text().split('\n'))
+        products_with_prices = mf.del_value(products_with_prices)
+
+        products.extend([products_with_prices[i] for i in range(len(products_with_prices)) if i % 2 == 0])
+        prices.extend([float(products_with_prices[i][:-3].replace(",", "")) for i in range(len(products_with_prices)) if i % 2 != 0])
+        prices_pymes["32"]["products"].update(mf.list_to_dict(products, prices))
+      
+        browser.close()
+
 if __name__ == "__main__":
-    Envios_Cuba("file:///D:/download/Download_Edge/Mercado%20Ciego%20de%20%C3%81vila%20-%20Envios%20Cuba,%20Paquetes%20a%20Cuba%20-%20La%20Venecia.html",31)
+    Super_Fácil()
     mf.save_json(prices_pymes, r"..\\data\\prices_pymes.json")
 
 
