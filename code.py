@@ -1,9 +1,7 @@
 import my_functions as mf
 import matplotlib.pyplot as plt
-import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import numpy as np
 import polars as pl
 import sys
 
@@ -35,7 +33,6 @@ def graph_coin():
   usd = [i["USD"] for i in tasas]
   euro = [i["ECU"] for i in tasas]
   mlc = [i["MLC"] for i in tasas]
-  usd_oficial = [ 123.6 for _ in usd]
 
   inicios = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 302]
 
@@ -47,37 +44,19 @@ def graph_coin():
   )
 
   fig.update_xaxes(
-   tickvals=inicios,   # posiciones
-    ticktext=month,     # etiquetas
+   tickvals=inicios,  
+    ticktext=month,  
     tickangle=0
   )
   fig.update_layout(title='Comparación del comportamiento del USD, el EURO y el MLC entre enero y noviembre de 2025.')
   fig.show()
   
-  # plt.figure(figsize=(12, 6))
-  # plt.plot(days, usd, label='USD')
-  # plt.plot(days, euro, label = 'EURO')
-  # plt.plot(days, mlc, label = 'MLC')
-  # # plt.plot(days[0:304], usd_oficial[0:304], label='USD en Cadeca')
-  # plt.xticks(inicios, month, rotation=0)
-  # plt.title('Comparación del comportamiento del USD, el EURO y el MLC entre enero y noviembre de 2025.')
-  # plt.legend()
-  # plt.show()
 
 def bar_pymes():      
-  
   fig = go.Figure(data=go.Bar(
      x= city,
      y = count_pymes
   ))
-  fig.update_xaxes()
-
-  # Matplotlib
-  # count_city = np.arange(len(count_pymes))
-  # plt.figure(figsize=(14, 6))
-  # plt.bar(count_city, count_pymes)
-  # plt.xticks(count_city,city, rotation=0)
-  # plt.show()
   fig.update_layout(title= "Comparación de la cantidad de actores económicos creados desde 2021 por provincia.")
   fig.show()
 
@@ -157,8 +136,6 @@ def price_media(product: str):
 
 pymes_arroz ,canasta_arroz = price_media("arroz")
 
-print(pymes_arroz)
-
 pymes_pollo ,canasta_pollo =  price_media("pollo")
 
 pymes_azúcar, canasta_azúcar = price_media("azúcar")
@@ -209,7 +186,7 @@ def bar_canasta_vs_pymes():
     fig.show()
     
 def qvapay_vs_el_toque():
-  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-5','2025-11-30', False, False)]
+  fechas = [fecha['date_from'] for fecha in mf.intervalo_fechas('2025-11-1','2025-11-30', False, False)]
   usd_qvapay = []
   for fecha in fechas:
     offers = []
@@ -219,8 +196,6 @@ def qvapay_vs_el_toque():
     usd_qvapay.append(offers)
   medias_qvapay = [ float(mf.mean(m)) for m in usd_qvapay]
   medias_el_toque = [el_toque[fecha]['USD'] for fecha in fechas]
-  medias_qvapay[21] =  (medias_qvapay[20] + medias_qvapay[22]) / 2
-
   fig = go.Figure(data=[
     go.Line(name="El Toque", x=fechas, y=medias_el_toque),
     go.Line(name="QvaPay", x=fechas, y=medias_qvapay)
