@@ -3252,7 +3252,7 @@
     },
     "26": {
         "name": "EL LUGAR - Oriente",
-        "sales_category": null,
+        "sales_category": "minorista",
         "currency": "USD",
         "horary": {
             "days": null,

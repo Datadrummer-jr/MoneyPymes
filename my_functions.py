@@ -370,3 +370,19 @@ def dict_for_index(dict: dict, index: int):
     keys = [k for k in dict]
     key = keys[index]
     return dict[key]
+
+def mean(lista: list = []) -> float:
+  n = len(lista)
+  if n == 0:
+    return 0
+  return float(sum(lista) / n)
+
+def median(lista: list) -> float:
+  n = len(lista)
+  lista = sorted(lista)
+  if n == 0:
+    return 0
+  if n % 2 != 0:
+    return float(lista[(n-1)//2])
+  return  float((lista[(n-1)//2] + lista[n//2]) / 2)
+

@@ -1,5 +1,7 @@
 
 from playwright.sync_api import sync_playwright
+from httpx import AsyncClient
+import asyncio
 import os
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -179,9 +181,26 @@ def Super_Fácil():
       
         browser.close()
 
+def Min_Salary():
+    products_with_prices = []
+    products = []
+    prices = []
+    with sync_playwright() as p:
+        browser =  p.chromium.launch(
+        headless=True
+        )
+        page =  browser.new_page()
+        page.goto("file:///D:/download/Download_Edge/Salario%20m%C3%ADnimo%20por%20pa%C3%ADs%202025.html", wait_until="domcontentloaded")
+        
+        web_poducts = page.locator("li.strong")
+        print(web_poducts.first.inner_text())
+      
+        browser.close()
+
+   
 if __name__ == "__main__":
-    Super_Fácil()
-    mf.save_json(prices_pymes, r"..\\data\\prices_pymes.json")
+    asyncio.run(Min_Salary())
+    # mf.save_json(prices_pymes, r"..\\data\\prices_pymes.json")
 
 
   

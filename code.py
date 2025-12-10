@@ -101,12 +101,11 @@ def compra_por_escala(escala: int):
               else 0
               for i in mipymes]
    máximos = [ m for m in máximos if m != 0]
-   return  int(np.median(máximos))
+   return  int(mf.median(máximos))
 
 def max_bar():
-
   max_products = [compra_por_escala(s) for s in salarios['44_horas']]
-  count_escalas = np.arange(len(salarios['44_horas']))
+  count_escalas = list(range(len(salarios['44_horas'])))
   plt.figure(figsize=(16, 10))
   plt.barh(count_escalas, max_products,  color= "yellow")
   plt.yticks(count_escalas, salarios['44_horas'], rotation=0)
@@ -150,13 +149,15 @@ text_pyme = f"Para contar esta historia se obtuvieron datos de {len(mipymes)} ac
 representan sólo un { f"{round(percent,2)} %"} del total de los creados\n desde 2021, pero con planes  \
 de que este porciento alcance el 30 % en un futuro no muy lejano."
 
-pymes_keys = [k for k in mipymes]
+pymes_keys = [k for k in mipymes if mipymes[k]["sales_category"] == "minorista"]
 canasta_keys = [k for k in canasta_básica]
 
 def price_media(product: str):
-  return np.mean(mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes[a]["products"], product)) for a in pymes_keys ])), np.mean(mf.aplanar_lista(mf.dict_num_values(mf.search_keys(canasta_básica, product))))
+  return mf.mean(mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes[a]["products"], product)) for a in pymes_keys ])), mf.mean(mf.aplanar_lista(mf.dict_num_values(mf.search_keys(canasta_básica, product))))
 
 pymes_arroz ,canasta_arroz = price_media("arroz")
+
+print(pymes_arroz)
 
 pymes_pollo ,canasta_pollo =  price_media("pollo")
 
@@ -216,7 +217,7 @@ def qvapay_vs_el_toque():
       if qvapay[offer]["date"][:10] == fecha and qvapay[offer]["coin"] == "CUP":
          offers.append(qvapay[offer]["price"])  
     usd_qvapay.append(offers)
-  medias_qvapay = [ float(np.mean(m)) for m in usd_qvapay]
+  medias_qvapay = [ float(mf.mean(m)) for m in usd_qvapay]
   medias_el_toque = [el_toque[fecha]['USD'] for fecha in fechas]
   medias_qvapay[21] =  (medias_qvapay[20] + medias_qvapay[22]) / 2
 
@@ -235,8 +236,8 @@ def minorista_vs_mayorista():
                  [ usd * última_tasa["ECU"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "EURO"
                  else mf.dict_num_values(mipymes[i]) for i in mipymes if mipymes[i]["sales_category"] == "mayorista" ]
    
-   media_minorista = np.median(mf.aplanar_lista(minoristas))
-   media_mayorista = np.median(mf.aplanar_lista(mayoristas))
+   media_minorista = mf.median(mf.aplanar_lista(minoristas))
+   media_mayorista = mf.median(mf.aplanar_lista(mayoristas))
 
    fig = go.Figure(data=[
       go.Bar(x= ["Minorista"], y= [media_minorista], name="Minorista"),
