@@ -81,11 +81,22 @@ def compra_por_escala(escala: int):
 def max_bar():
   max_products = [compra_por_escala(s) for s in salarios['44_horas']]
   count_escalas = list(range(len(salarios['44_horas'])))
-  plt.figure(figsize=(16, 10))
-  plt.barh(count_escalas, max_products,  color= "yellow")
-  plt.yticks(count_escalas, salarios['44_horas'], rotation=0)
-  plt.title('Mediana de la cantidad máxima de productos que se pueden adquirir en un establecimiento de comercio según escala salarial de 44 horas laborales.')
-  plt.show()
+  # plt.figure(figsize=(16, 10))
+  # plt.barh(count_escalas, max_products,  color= "yellow")
+  # plt.yticks(count_escalas, salarios['44_horas'], rotation=0)
+  # plt.title('Mediana de la cantidad máxima de productos que se pueden adquirir en un establecimiento de comercio según escala salarial de 44 horas laborales.')
+  # plt.show()
+
+  fig = go.Figure(data=[
+     go.Bar(x= max_products, y= count_escalas, orientation="h", marker=dict(color="yellow"))
+  ])
+  fig.update_yaxes(
+    tickvals= count_escalas,  
+    ticktext= salarios['44_horas'],  
+    tickangle=0
+  )
+  fig.update_layout(height=700, title='Mediana de la cantidad máxima de productos que se pueden adquirir en un establecimiento de comercio según escala salarial de 44 horas laborales.')
+  fig.show()
 
 población  = [ población_por_provincia[abreviaturas[i]]["total"] for i in city]
 
