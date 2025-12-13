@@ -18,7 +18,7 @@ canasta_básica = mf.read_json("data/canasta_básica.json")
 qvapay = mf.read_json("data/qvapay.json")
 
 
-última_tasa = mf.dict_for_index(el_toque,-1)
+last_rate = mf.dict_for_index(el_toque,-1)
 
 mipymes_cup = {k: mipymes[k] for k in mipymes if mipymes[k]["sales_category"] == "minorista" and mipymes[k]["currency"] == "CUP"}
 mipymes_usd =  {k: mipymes[k] for k in mipymes if mipymes[k]["sales_category"] == "minorista" and mipymes[k]["currency"] == "USD"}
@@ -65,10 +65,10 @@ def graph_coin():
 #   fig.show()
       
 def compra_por_escala(escala: int):
-   máximos = [mf.max_objects([int(i*última_tasa["ECU"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+   máximos = [mf.max_objects([int(i*last_rate["ECU"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
               if  mipymes[i]["currency"] == "EUR" 
               else
-              mf.max_objects([int(i*última_tasa["USD"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+              mf.max_objects([int(i*last_rate["USD"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
               if mipymes[i]["currency"] == "USD"
               else mf.max_objects([int(i) for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
               for i in mipymes if mipymes[i]["sales_category"] == "minorista"]
@@ -122,8 +122,8 @@ def max_bar():
 
 def price_media(product: str):
   canasta =  mf.aplanar_lista(mf.dict_num_values(mf.search_keys(canasta_básica, product)))
-  usd = list(map(lambda x: x* última_tasa["USD"],  mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_usd[a]["products"], product)) for a in mipymes_usd ])))
-  eur = list(map(lambda x: x*última_tasa['ECU'], mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_eur[a]["products"], product)) for a in mipymes_eur ])))
+  usd = list(map(lambda x: x* last_rate["USD"],  mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_usd[a]["products"], product)) for a in mipymes_usd ])))
+  eur = list(map(lambda x: x*last_rate['ECU'], mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_eur[a]["products"], product)) for a in mipymes_eur ])))
   cup= mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_cup[a]["products"], product)) for a in mipymes_cup])
   return mf.mean(cup+usd+eur) , mf.mean(canasta)
 
@@ -184,11 +184,11 @@ def bar_canasta_vs_pymes():
 #   fig.show()
 
 # def minorista_vs_mayorista():
-#    minoristas = [ [ usd * última_tasa["USD"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "USD" else
-#                  [ usd * última_tasa["ECU"] for usd in mf.dict_num_values(mipymes[i])] if  mipymes[i]["currency"] == "EUR"
+#    minoristas = [ [ usd * last_rate["USD"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "USD" else
+#                  [ usd * last_rate["ECU"] for usd in mf.dict_num_values(mipymes[i])] if  mipymes[i]["currency"] == "EUR"
 #                  else mf.dict_num_values(mipymes[i])  for i in  mipymes if mipymes[i]["sales_category"] == "minorista"]
-#    mayoristas = [ [ usd * última_tasa["USD"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "USD" else
-#                  [ usd * última_tasa["ECU"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "EUR"
+#    mayoristas = [ [ usd * last_rate["USD"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "USD" else
+#                  [ usd * last_rate["ECU"] for usd in mf.dict_num_values(mipymes[i])] if mipymes[i]["currency"] == "EUR"
 #                  else mf.dict_num_values(mipymes[i]) for i in mipymes if mipymes[i]["sales_category"] == "mayorista" ]
    
 #    media_minorista = mf.median(mf.aplanar_lista(minoristas))
@@ -203,8 +203,8 @@ def bar_canasta_vs_pymes():
 #    fig.show()
 
 def bar_compare_coin():
-   usd = mf.median(list(map(lambda x: x*última_tasa["USD"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_usd]))))
-   eur = mf.median(list(map(lambda x: x*última_tasa["ECU"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_eur]))))
+   usd = mf.median(list(map(lambda x: x*last_rate["USD"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_usd]))))
+   eur = mf.median(list(map(lambda x: x*last_rate["ECU"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_eur]))))
    cup = mf.median(mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_cup]))
    coins = ["USD", "EUR", "CUP"]
 
