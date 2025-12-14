@@ -53,7 +53,7 @@ def graph_coin():
     tickangle=0
   )
   fig.update_layout(title='Comparación del comportamiento del USD, el EURO y el MLC entre enero y 10 de diciembre de 2025.')
-  fig.write_image("static/graph_coin.png")  
+  fig.write_image("static_charts/graph_coin.png")  
   fig.show()
   
 
@@ -87,7 +87,7 @@ def max_bar():
     tickangle=0
   )
   fig.update_layout(height=700, title='Mediana de la cantidad máxima de productos que se pueden adquirir en un establecimiento de comercio según escala salarial.')
-  fig.write_image("static/max_bar.png")  
+  fig.write_image("static_charts/max_bar.png")  
   fig.show()
 
 # población  = [ población_por_provincia[abreviaturas[i]]["total"] for i in city]
@@ -165,7 +165,7 @@ def canasta_vs_pymes():
 
     fig.update_xaxes( tickvals=list(range(len(products))),  ticktext=products, tickangle=30 )
     fig.update_layout(title="Gráficas comparativas del costo medio de productos de la canasta básica contra los vendidos por mipymes.")
-    fig.write_image("static/canasta_vs_pymes.png")  
+    fig.write_image("static_charts/canasta_vs_pymes.png")  
     fig.show()
     
 # def qvapay_vs_el_toque():
@@ -215,7 +215,7 @@ def compare_coin():
       data= go.Bar(x=coins, y=[usd, eur, cup], marker=dict(color= ["red", "yellow", "green"]))
    )
    fig.update_layout(title="Gráfica demostrativa de que el precio del CUP está influyendo en el precio de los productos en mipymes cubanas.")
-   fig.write_image("static/compare_coin.png")  
+   fig.write_image("static_charts/compare_coin.png")  
    fig.show()
 
 usd = list(map(lambda x: x*last_rate["USD"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_usd])))
