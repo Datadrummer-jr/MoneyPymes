@@ -68,12 +68,12 @@ def graph_coin():
 #   fig.show()
       
 def compra_por_escala(escala: int):
-   máximos = [mf.max_objects([int(i*last_rate["ECU"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+   máximos = [mf.max_objects([mf.redondear(i*last_rate["ECU"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
               if  mipymes[i]["currency"] == "EUR" 
               else
-              mf.max_objects([int(i*last_rate["USD"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+              mf.max_objects([mf.redondear(i*last_rate["USD"])for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
               if mipymes[i]["currency"] == "USD"
-              else mf.max_objects([int(i) for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
+              else mf.max_objects([mf.redondear(i) for i in mf.dict_num_values(mipymes[i]['products'])], escala) 
               for i in mipymes if mipymes[i]["sales_category"] == "minorista"]
    return  int(mf.median(máximos))
 
@@ -224,8 +224,8 @@ def max_buy_latam():
    names_products = mf.aplanar_lista([mf.dict_keys(amazon[a]) for a in amazon])
    prices_products = mf.aplanar_lista([mf.dict_num_values(amazon[a]) for a in amazon])
    uni_products = mf.list_to_dict(names_products, prices_products)
-   salaries = [int(latam_salary[s]) for s in latam_salary]
-   max_buy = [ mf.max_objects([int(i) for i in mf.dict_num_values(uni_products)], s) for s in salaries]
+   salaries = [mf.redondear(latam_salary[s]) for s in latam_salary]
+   max_buy = [ mf.max_objects([mf.redondear(i) for i in mf.dict_num_values(uni_products)], s) for s in salaries]
 
    fig = go.Figure(data= go.Bar(
       x= [c for c in latam_salary],
@@ -235,4 +235,8 @@ def max_buy_latam():
    fig.update_layout(title="¿ Cuáles serán los paises de latinoamérica que más productos pueden comprar en Amazon con un salario mínimo ? ")
    fig.write_image("static_charts/max_buy_latam.png") 
    fig.show()
+
+
+      
+
    
