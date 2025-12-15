@@ -207,22 +207,18 @@ def canasta_vs_pymes():
 #    fig.update_layout(title= "Gráfica comparando el precio medio entre los preductos vendidos de forma minorista y de forma mayorista.")
 #    fig.show()
 
-def compare_coin():
-   usd = mf.median(list(map(lambda x: x*last_rate["USD"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_usd]))))
-   eur = mf.median(list(map(lambda x: x*last_rate["ECU"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_eur]))))
-   cup = mf.median(mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_cup]))
-   coins = ["USD", "EUR", "CUP"]
+# def compare_coin():
+#    usd = mf.median(list(map(lambda x: x*last_rate["USD"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_usd]))))
+#    eur = mf.median(list(map(lambda x: x*last_rate["ECU"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_eur]))))
+#    cup = mf.median(mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_cup]))
+#    coins = ["USD", "EUR", "CUP"]
 
-   fig = go.Figure(
-      data= go.Bar(x=coins, y=[usd, eur, cup], marker=dict(color= ["red", "yellow", "green"]))
-   )
-   fig.update_layout(title="Gráfica demostrativa de que el precio del CUP está influyendo en el precio de los productos en mipymes cubanas.")
-   fig.write_image("static_charts/compare_coin.png")  
-   fig.show()
-
-usd = list(map(lambda x: x*last_rate["USD"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_usd])))
-eur = list(map(lambda x: x*last_rate["ECU"], mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_eur])))
-cup = mf.aplanar_lista([mf.dict_num_values(mipymes[p]["products"]) for p in mipymes_cup])
+#    fig = go.Figure(
+#       data= go.Bar(x=coins, y=[usd, eur, cup], marker=dict(color= ["red", "yellow", "green"]))
+#    )
+#    fig.update_layout(title="Gráfica demostrativa de que el precio del CUP está influyendo en el precio de los productos en mipymes cubanas.")
+#    fig.write_image("static_charts/compare_coin.png")  
+#    fig.show()
 
 def max_buy_latam():
    names_products = mf.aplanar_lista([mf.dict_keys(amazon[a]) for a in amazon])
