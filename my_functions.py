@@ -85,36 +85,6 @@ def intervalo_fechas(fecha_inicio: str, fecha_fin: str, url: bool = True, time: 
         current += timedelta(days=1)
     return resultado
 
-
-def one_spce(t:str,f: str,s: str) -> False:
-  lista = t.split()
-  lista = del_value(lista)
-  for i in range(0, len(lista)-1):
-    if lista[i] == f and lista[i+1] == s:
-      return True
-  return False
-
-def multi_replace(text:str, dict_replace: dict[str,str] = {'' : ''}, space: bool = False)  -> str:
-  list_text = text.split()
-  palabras = [ p.strip() for p in list_text]
-  if space:
-    text = ' '.join(palabras)
-    for i in dict_replace.keys():
-      text = text.replace(i, dict_replace[i])
-  else:
-    for i in dict_replace.keys():
-      text = text.replace(i, dict_replace[i])
-  return text
-
-def write_file(origen: str, destino: str, replaces: dict[str,str] =  {'' : ''}, space = False):
-   with open(origen, "r") as file:
-    text = file.read()
-    with open(destino, "w") as wr:
-      wr.write(multi_replace(text, replaces, space))
-
-def py_compile(destino: str):
-  return subprocess.run(['cythonize',  '--inplace', destino],  capture_output=True, text=True).stdout
-
 def del_value(lista: list , value = '') -> List:
   return [ i for i in lista if i != value ]
   
@@ -313,11 +283,12 @@ def del_dict_in_sec(dict: dict, key:str="", first:int=0):
         new_dict.update({str(i): new_values[i]})
     return new_dict
 
-def max_objects(object: list[int|float], max_sum : int) -> int:
-    matriz = [-sys.maxsize] * (max_sum+1)
+def max_objects(objects: list[int|float], max_sum : int) -> int:
+    objects = [int(o) for o in objects]
+    matriz = [-sys.maxsize] * (int(max_sum)+1)
     matriz[0] = 0
-    for i in object:
-        for j in range(max_sum, i - 1, -1):
+    for i in objects:
+        for j in range(int(max_sum), i - 1, -1):
             matriz[j] = max(matriz[j], matriz[j - i] + 1)
     return int(max(matriz))
 
@@ -329,3 +300,5 @@ def redondear(n: float) -> int:
    else:
       return right
    
+def del_value(lista: list, value) -> list:
+   return [v for v in lista if v != value]

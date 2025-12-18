@@ -254,19 +254,45 @@ def ventas_minoristas():
    fig.show()
 
 def mayor_alcance():
-   meat = ["Arroz","Frijol", "Huevo", "Pollo", "Cerdo", "Res", "Carne"]
-   drink = ["Cerveza", "Ron", "Whisky", "Bebidas"]
-   pymes_key = [k for k in mipymes]
+   alimentos =  [
+    "pollo", "cerdo", "res", "carne", "jamon", "jamón", "pescado", "atun", 
+    "atún", "sardina", "salchicha", "hamburguesa", "bistec", "costilla", 
+    "lomo", "huevo", "arroz", "frijol", "lenteja", "garbanzo", "pasta", 
+    "espagueti", "spaghetti", "pizza", "pan", "galleta", "cereal", "harina", 
+    "leche", "queso", "yogurt", "helado", "mantequilla", "aceite", "vinagre", 
+    "salsa", "mayonesa", "ketchup", "mostaza", "tomate", "fruta", "vegetal", 
+    "ensalada", "refresco", "jugo", "agua mineral", "agua natural", "agua gourmet", 
+    "café", "cafe ", "malta", "chocolate", "cacao", "tarta", "dulce", 
+    "mermelada", "croqueta", "empanada", "tostones", "vianda"
+   ]
 
-   pymes_carne = mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk)) for subk in meat for k in pymes_key ]) + \
-                 [price * last_rate["USD"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_usd[k]["products"], subk)) for subk in meat for k in pymes_key ])] + \
-                 [price * last_rate["ECU"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_eur[k]["products"], subk)) for subk in meat for k in pymes_key ])]
+   bebidas_alcoholicas = [
+    "ron", "whisky", "vodka", "tequila", "aguardiente", "sangría", "licor", "vino", "espumoso", "champán", "anis",
+    "cerveza", "cubay", "havana club", "ballantine", "chivas", "absolut", "jagermeister", "profundo", "vigia", "black tears"
+   ]
+
+   pymes_alimentos = [mf.max_objects(mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk)), salarios["44_horas"][-1]) for subk in alimentos for k in mipymes_cup if mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk))] + \
+                 [mf.max_objects([price * last_rate["USD"] for price in mf.dict_num_values(mf.search_keys(mipymes_usd[k]["products"], subk))], salarios["44_horas"][-1]) for subk in alimentos for k in mipymes_usd ] +\
+                 [mf.max_objects([price * last_rate["ECU"] for price in mf.dict_num_values(mf.search_keys(mipymes_eur[k]["products"], subk))], salarios["44_horas"][-1]) for subk in alimentos for k in mipymes_eur ]
+
+   pymes_bebidas = [mf.max_objects(mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk)), salarios["44_horas"][1]) for subk in bebidas_alcoholicas for k in mipymes_cup if mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk))] + \
+                 [mf.max_objects([price * last_rate["USD"] for price in mf.dict_num_values(mf.search_keys(mipymes_usd[k]["products"], subk))], salarios["44_horas"][-1]) for subk in bebidas_alcoholicas for k in mipymes_usd ] +\
+                 [mf.max_objects([price * last_rate["ECU"] for price in mf.dict_num_values(mf.search_keys(mipymes_eur[k]["products"], subk))], salarios["44_horas"][1]) for subk in bebidas_alcoholicas for k in mipymes_eur ]
    
-   pymes_bebidas = mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk)) for subk in drink for k in pymes_key ]) + \
-                 [price * last_rate["USD"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_usd[k]["products"], subk)) for subk in drink for k in pymes_key ])] + \
-                 [price * last_rate["ECU"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_eur[k]["products"], subk)) for subk in drink for k in pymes_key ])]
-   
-   
+   print(max(mf.del_value(pymes_alimentos, 0)))
+   print(max(mf.del_value(pymes_bebidas, 0)))
+
+   fig = go.Figure(
+      data= 
+         go.Bar(
+            x=["Alimentos", "Bebidas Alcoholicas"],
+            y = [mf.median(mf.del_value(pymes_alimentos, 0)), mf.median(mf.del_value(pymes_bebidas, 0))]
+         )
+   )
+   fig.show()
+
+
+
 
       
 
