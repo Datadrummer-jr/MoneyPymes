@@ -255,13 +255,19 @@ def ventas_minoristas():
 
 def mayor_alcance():
    meat = ["Arroz","Frijol", "Huevo", "Pollo", "Cerdo", "Res", "Carne"]
-   bebidas = ["Cerveza", "Ron", "Whisky", "Bebidas"]
+   drink = ["Cerveza", "Ron", "Whisky", "Bebidas"]
    pymes_key = [k for k in mipymes]
+
    pymes_carne = mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk)) for subk in meat for k in pymes_key ]) + \
                  [price * last_rate["USD"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_usd[k]["products"], subk)) for subk in meat for k in pymes_key ])] + \
                  [price * last_rate["ECU"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_eur[k]["products"], subk)) for subk in meat for k in pymes_key ])]
-   print(pymes_carne)
-   pass
+   
+   pymes_bebidas = mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_cup[k]["products"], subk)) for subk in drink for k in pymes_key ]) + \
+                 [price * last_rate["USD"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_usd[k]["products"], subk)) for subk in drink for k in pymes_key ])] + \
+                 [price * last_rate["ECU"] for price in mf.aplanar_lista([mf.dict_num_values(mf.search_keys(mipymes_eur[k]["products"], subk)) for subk in drink for k in pymes_key ])]
+   
+   
+
       
 
    
