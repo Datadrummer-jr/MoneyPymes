@@ -1,9 +1,6 @@
 import my_functions as mf
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-from IPython.display import Image
-import polars as pl
-import sys
 
 el_toque = mf.read_json('data/el_toque.json')
 salarios = mf.read_json("data/escalas_salariales.json")
@@ -115,14 +112,7 @@ def max_bar():
 #        return i
 #   return 'ok'
 
-# df_for_type_and_hab = pl.DataFrame({
-#    "Provincias": provincias + ['Cuba'],
-#    "Mipymes Privadas": mpmp + [sum(mpmp)], 
-#    "Mipymes Estatales": mpme + [sum(mpme)] ,
-#    "Mipymes Indefinidas":  mipymes_indefinidas + [sum(mipymes_indefinidas)], 
-#    "CNA": cna + [sum(cna)],
-#    "Total": mf.sum_rows([mpmp,mpme,cna,mipymes_indefinidas]) + [sum(mf.sum_rows([mpmp,mpme,cna,mipymes_indefinidas]))], 
-#    "Cantidad de actores económicos por habitante": for_hab + [int(población_por_provincia["Cuba"]["total"] // sum(count_pymes))] })
+
 
 
 def price_media(product: str):
@@ -156,10 +146,12 @@ pymes_yogurt, canasta_yogurt = price_media("yogurt")
 
 pymes_pescado, canasta_pescado = price_media("pescado")
 
+pymes_huevo, canasta_huevo = price_media("CARTON DE HUEVO")
+
 def canasta_vs_pymes():
-    products = ["arroz", "pollo" , "azúcar", "frijoles", "aceite", "picadillo", "mortadella", "café", "yogurt", "pescado"]
-    pymes_products = [pymes_arroz, pymes_pollo, pymes_azúcar, pymes_frijoles, pymes_aceite, pymes_picadillo, pymes_mortadella, pymes_café, pymes_yogurt, pymes_pescado]
-    canasta_products = [canasta_arroz, canasta_pollo, canasta_azúcar, canasta_frijoles, canasta_aceite, canasta_picadillo, canasta_mortadella, canasta_café, canasta_yogurt, canasta_pescado]
+    products = ["arroz", "pollo" , "azúcar", "frijoles", "aceite", "picadillo", "mortadella", "café", "yogurt", "pescado", "huevo" ]
+    pymes_products = [pymes_arroz, pymes_pollo, pymes_azúcar, pymes_frijoles, pymes_aceite, pymes_picadillo, pymes_mortadella, pymes_café, pymes_yogurt, pymes_pescado, pymes_huevo]
+    canasta_products = [canasta_arroz, canasta_pollo, canasta_azúcar, canasta_frijoles, canasta_aceite, canasta_picadillo, canasta_mortadella, canasta_café, canasta_yogurt, canasta_pescado, canasta_huevo]
 
     fig = make_subplots(rows=1, cols=2, subplot_titles=["Mipymes", "Canasta Básica"])
 
